@@ -1,0 +1,31 @@
+slides:
+  -
+    content: |
+      # Comments
+      ###### Intro to Sass<!-- .element: class="short-title" -->
+
+    options:
+      class: section-card
+
+  -
+    content: |
+      ### Comments<!-- .element: class="short-title" -->
+
+      Traditional CSS comments are downloaded by the user. With Sass, we can specify whether comments are left in the final CSS code or are only visible to the developer:
+
+      <div class="grid grid-1-1 util-margin-t2">
+      <div>
+      ###### Sass input<!-- .element: class="util-margin-b50 util-center" -->
+      ```
+      /* Multiline comments will appear
+      in the final CSS file */
+      // This single-line comment won't
+      a { color: blue; }
+      ```
+      </div><div>
+      ###### CSS output<!-- .element: class="util-margin-b50 util-center" -->
+      ```
+      /* Multiline comments will appear
+      in the final CSS file */
+      a { color: blue; }```
+      </div></div>

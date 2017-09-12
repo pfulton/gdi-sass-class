@@ -1,0 +1,78 @@
+slides:
+  -
+    content: |
+      # Mixins
+      ###### Intro to Sass<!-- .element: class="short-title" -->
+
+    options:
+      class: section-card
+  -
+    content: |
+      ### Mixins<!-- .element: class="short-title" -->
+
+       Mixins are really just a collection of one or more styles that are reusable, like variables are reusable values
+      <table class="code-compare">
+        <tr><td>
+
+        Sass input:
+        ```
+        <span class="value">@mixin dropshadow($text</span>)</span> {
+      color: $text</span>;
+      text-shadow: 2px 4px lighten($text</span>, 50%);
+      }
+      p {
+      <span class="value">@include dropshadow(black);</span>
+      }
+      ```
+      </td>
+      <td>
+
+        CSS output:
+        ```
+        p {
+      color: black;
+      text-shadow: 2px 4px #808080;
+      }```
+      <p class="output-example" style="color: black; text-shadow: 2px 4px #808080; background: transparent;">Example of output style
+
+      </tr></td></table>
+
+  -
+    content: |
+      ### Mixins<!-- .element: class="short-title" -->
+
+      These are especially useful for CSS rules that need<br>browser prefixes for older browsers, like gradients.
+
+      ```scss
+      @mixin vertical-gradient( $top, $bottom ) {
+      	background: $top;
+      	background: -moz-linear-gradient( top, $top 0%, $bottom 100% );
+      	background: -webkit-gradient( linear, left top, left bottom, color-stop(0%,$top), color-stop(100%,$bottom) );
+      	background: -webkit-linear-gradient( top, $top 0%, $bottom 100% );
+      	background: -o-linear-gradient( top, $top 0%, $bottom 100% );
+      	background: -ms-linear-gradient( top, $top 0%, $bottom 100% );
+      	background: linear-gradient( top, $top 0%, $bottom 100% );
+      }
+      ```
+
+  -
+    content: |
+      ##### Let's Develop It!
+      <hr>
+
+      <div class="grid grid-2-1">
+      - Add some mixins to `_utilities.scss` - a good candidate is any style that needs a browser prefix
+      - Try replacing the footer gradient with a mixin
+      - Use these mixins in your `styles.scss` file
+      - Add different types of comments that describe what your mixins do, and check the final CSS in the browser inspector to see if they appear
+
+      ```
+      @mixin name {
+      property: value;
+      }
+      @mixin example($argument) {
+      property: value;
+      property: $argument;
+      }
+      ```
+      </div>

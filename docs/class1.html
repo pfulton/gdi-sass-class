@@ -259,6 +259,8 @@ Notes:</script>
 
 - Sass documentation ([sass-lang.com](http://sass-lang.com))
 - MDN Web Docs for CSS ([mdn.io/css](http://mdn.io/css))
+- Sassmeister ([sassmeister.com](https://www.sassmeister.com))
+- CodePen ([codepen.io](https://codepen.io))
 Notes:</script>
   </section>
 
@@ -533,7 +535,8 @@ Notes:</script>
   </section>
   <section data-markdown data-separator-notes="^Notes:"class="slide ">
     <script type="text/template">
-      ### Let's Develop It!
+      ##### Let's Develop It!
+<hr>
 
   - Open your <span class="blue">styles.scss</span> file
   - Rewrite some styles to use nesting and referencing the parent
@@ -543,118 +546,15 @@ Notes:</script>
   - Run the <a href="#/17" target="_blank">sass --watch command</a> to see your changes in the browser
 Notes:</script>
   </section>
-  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+
+  <section data-markdown data-separator-notes="^Notes:"class="slide section-card">
     <script type="text/template">
-      ### Break Time!
+      # Break Time!
 
 Stand up and stretch - we'll resume in 5 minutes
 Notes:</script>
   </section>
-  <section data-markdown data-separator-notes="^Notes:"class="slide section-card">
-    <script type="text/template">
-      # Variables
-###### Intro to Sass<!-- .element: class="short-title" -->
-Notes:</script>
-  </section>
-  <section data-markdown data-separator-notes="^Notes:"class="slide ">
-    <script type="text/template">
-      ### Variables<!-- .element: class="short-title" -->
 
-Sometimes you want to reuse a value for a style - you use them frequently, they're hard to type or remember, such as
-
-- Colors `#2a79af`
-- [Font stack styles](http://cssfontstack.com) `Georgia, Times, "Times New Roman", serif;`
-- Font sizes `1.675em`
-Notes:</script>
-  </section>
-  <section data-markdown data-separator-notes="^Notes:"class="slide ">
-    <script type="text/template">
-      #### Variables<!-- .element: class="short-title" -->
-### Defining Variables
-
-Variables with Sass let us reuse values more than once, while only defining them in one place
-
-```
-//define using dollar sign
-$brandColor: #f90000;
-$mainTextcolor: #fff;
-$accentColor: #ccc;
-```
-
-To create a variable you need a dollar sign before the name of your variable, and a colon: to give it a <em>value</em>
-
-Note that in Sass files, you can comment out a line with <span class="green">// two slashes</span>
-Notes:</script>
-  </section>
-  <section data-markdown data-separator-notes="^Notes:"class="slide ">
-    <script type="text/template">
-      ```
-$brandColor: #f90000; // red
-$mainTextcolor: #fff; // white
-$accentColor: #ccc; // grey
-
-header {
-  color: $mainTextColor;
-  background-color: $brandColor;
-}
-.content {
-  color: $mainTextColor;
-  background-color: $accentColor;
-}
-footer {
-  color: $accentColor;
-  background-color: $brandColor;
-}
-```
-Notes:</script>
-  </section>
-  <section data-markdown data-separator-notes="^Notes:"class="slide ">
-    <script type="text/template">
-      #### Variables<!-- .element: class="short-title" -->
-### Keep em together
-
-Variables are easy to change if you keep them all in one stylesheet, and update or add to the styles as needed
-```
-// Let's define some variables
-// Colors
-$favoriteColor: #2a79af;
-$anotherColor: #f05b62;
-// Fonts
-$favoriteFont: Papyrus, fantasy;
-$aPracticalFont: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-// Font sizes
-$aNiceBigFontSize: 16px;
-$finePrint: 10px;
-$giantLogo: 36px;
-// Margins and Padding
-$defaultMargin: 15px;
-$defaultPadding: $defaultMargin;
-```
-Notes:</script>
-  </section>
-  <section data-markdown data-separator-notes="^Notes:"class="slide ">
-    <script type="text/template">
-      ### Let’s Develop It!
-<hr>
-
-- Create a new Sass stylesheet called _utilities.scss
-- Don't forget to put it in the right folder
-- Import your new stylesheet into styles.scss by putting the following code at the top of styles.scss: `@import "_utilities";`
-- In your new stylesheet, make some new variables, and base some variables on your existing styles - look for colors, fonts, and size values
-- Run the <a href="#/17" target="_blank">sass --watch command</a> to see your changes in the browser
-Notes:</script>
-  </section>
-  <section data-markdown data-separator-notes="^Notes:"class="slide ">
-    <script type="text/template">
-      ### Syntax highlighting
-You can download tools to highlight your Sass properly in Sublime Text:
-- <a target="_blank" href="http://wbond.net/sublime_packages/package_control/installation">Install Package Manager for Sublime Text 2</a>
-- Go to Tools > Command Palette. Type "Package Control".
-- Click "Install Package"
-- Type "Sass" and click the first result
-- Click: View > Syntax > Sass
-Notes:</script>
-  </section>
 
   <section data-markdown data-separator-notes="^Notes:"class="slide section-card">
     <script type="text/template">
@@ -664,45 +564,51 @@ Notes:</script>
   </section>
   <section data-markdown data-separator-notes="^Notes:"class="slide ">
     <script type="text/template">
-      ### Math Operations
+      ### Math Operations<!-- .element: class="short-title" -->
 
-With CSS you have to be explicit about everything, including numbers. With Sass, you can write math to calculate numbers for you:
+With Sass, you can write math to calculate numbers for you:
 
-<table style="display: block;margin: 0 auto; width: 300px;">
+<table style=" margin: 4rem auto; width: 30%;">
   <!--tr><th>Symbol</th><th>Meaning</th></tr-->
   <tr><td>+</td><td><a target="_blank" href="http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#number_operations">Addition</a></td></tr>
   <tr><td>-</td><td><a target="_blank" href="http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#number_operations">Subtraction</a></td></tr>
-  <tr><td>*</td><td><a target="_blank" href="http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#number_operations">Multiplication</a></td></tr>
-  <tr><td>/</td><td><a target="_blank" href="http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#division-and-slash">Division</a>*</td></tr>
+  <tr><td>&#42;</td><td><a target="_blank" href="http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#number_operations">Multiplication</a></td></tr>
+  <tr><td>/</td><td><a target="_blank" href="http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#division-and-slash">Division</a><sup style="font-size: 50%;">1</sup></td></tr>
 </table>
 
-<p style="margin-top: 25px;font-size: .6em">*division is special, check the documentation link for why and how
+<p><small><sup style="font-size: 50%;">1</sup>division is special, check the documentation link for why and how</small></p>
 Notes:</script>
   </section>
   <section data-markdown data-separator-notes="^Notes:"class="slide ">
     <script type="text/template">
-      ### Math Operations
-Sass input:
+      #### Math Operations<!-- .element: class="short-title" -->
+
+<div class="grid grid-1-1 util-margin-t2">
+<div>
+###### Sass input<!-- .element: class="util-margin-b50 util-center" -->
 ```
 $layoutWidth: 960px;
 #sidebar {
   width: $layoutWidth/3;
 }
 ```
-
-CSS output:
+</div><div>
+###### CSS output<!-- .element: class="util-margin-b50 util-center" -->
 ```
 #sidebar {
   width: 320px;
 }
 ```
+</div><div>
 Notes:</script>
   </section>
   <section data-markdown data-separator-notes="^Notes:"class="slide ">
     <script type="text/template">
-      ### Math Operations
+      #### Math Operations<!-- .element: class="short-title" -->
 
-Sass input:
+<div class="grid grid-1-1 util-margin-t2">
+<div>
+###### Sass input<!-- .element: class="util-margin-b50 util-center" -->
 ```
 $layoutWidth: 960px;
 $defaultPadding: 16px;
@@ -711,20 +617,23 @@ $defaultPadding: 16px;
   width: $layoutWidth - $defaultPadding*2;
 }
 ```
-
-CSS output:
+</div><div>
+###### CSS output<!-- .element: class="util-margin-b50 util-center" -->
 ```
 #main {
   padding: 16px;
   width: 928px;
 }
 ```
+</div><div>
 Notes:</script>
   </section>
   <section data-markdown data-separator-notes="^Notes:"class="slide ">
     <script type="text/template">
-      ### Let's Develop It
+      ##### Let's Develop It!
+<hr>
 
+<div class="grid grid-1-1 util-margin-t2">
 - Write a math expression in Sass to calculate the width of elements in your page layout instead of declaring a number
 - Use a variable to represent the result of your calcuation
 - Compile to CSS and refresh your index page to see your changes
@@ -736,6 +645,7 @@ footer {
   width: ($layoutWidth - 20px);
 }
 ```
+</div>
 Notes:</script>
   </section>
 
@@ -747,104 +657,102 @@ Notes:</script>
   </section>
   <section data-markdown data-separator-notes="^Notes:"class="slide ">
     <script type="text/template">
-      ### Color Functions
+      #### Color Functions<!-- .element: class="short-title" -->
 
-Color functions are built-in to Sass. They let you alter existing color values. This is the <span class="blue">lighten</span> function:
-<table class="code-compare">
-  <tr><td>
+Color functions are built-in to Sass. They let you alter<br> existing color values. This is the *lighten* function:
 
-  Sass input:
-  ```
-  <span class="variable">$linkColor</span>: #000;
-<span class="variable">$linkShadow</span>: lighten(#000, 40%);
+<div class="grid grid-1-1 util-margin-t2">
+<div>
+###### Sass input<!-- .element: class="util-margin-b50 util-center" -->
+
+```
+$linkColor: #000;
+$linkShadow: lighten(#000, 40%);
 a {
-color: <span class="variable">$linkColor</span>;
-text-shadow: <span class="variable">$linkShadow</span>;
+  color: $linkColor;
+  text-shadow: $linkShadow;
 }
 ```
-</td>
-<td>
-
-  CSS output:
-  ```
-  a {
-color: #000;
-text-shadow: #666;
-}```
-<p class="output-example" style="color: #000; text-shadow: 3px 2px #666;">Example of output style
-</tr></td></table>
+</div><div>
+###### CSS output<!-- .element: class="util-margin-b50 util-center" -->
+```
+a {
+  color: #000;
+  text-shadow: #666;
+}
+```
+<p class="util-margin-t1" style="color: #000; text-shadow: 3px 2px #666;">Example of output style
+</div></div>
 Notes:</script>
   </section>
   <section data-markdown data-separator-notes="^Notes:"class="slide ">
     <script type="text/template">
-      ### Color Functions
+      #### Color Functions<!-- .element: class="short-title" -->
 
-This is the <span class="blue">darken</span> function:
-<table class="code-compare">
-  <tr><td>
+This is the *darken* function:
 
-  Sass input:
-  ```
-  <span class="variable">$background</span>: #ff0000; // red
-<span class="variable">$text</span>: darken($background,50%);
+<div class="grid grid-1-1 util-margin-t2">
+<div>
+###### Sass input<!-- .element: class="util-margin-b50 util-center" -->
+```
+$background: #ff0000; // red
+$text: darken($background,50%);
 body {
-color: <span class="variable">$text</span>;
-background: <span class="variable">$background</span>;
+  color: $text;
+  background: $background;
 }
 ```
-</td>
-<td>
-
-  CSS output:
-  ```
-  body {
-color: #990000;
-background: #ff0000;
-}```
-<p class="output-example" style="background-color: #f00; color: #900">Example of output style
-
-</tr></td></table>
-Notes:</script>
-  </section>
-  <section data-markdown data-separator-notes="^Notes:"class="slide ">
-    <script type="text/template">
-      ### Color Functions
-
-This is the <span class="blue">grayscale</span> function:
-<table class="code-compare">
-  <tr><td>
-
-  Sass input:
-  ```
-  <span class="variable">$background</span>: #ff0000; // red
-<span class="variable">$text</span>: darken($background,50%);
+</div><div>
+###### CSS output<!-- .element: class="util-margin-b50 util-center" -->
+```
 body {
-background: <span class="variable">grayscale(#f00)</span>;
-color: <span class="variable">grayscale(darken(#f00, 50%))</span>;
+  color: #990000;
+  background: #ff0000;
 }
 ```
-</td>
-<td>
-
-  CSS output:
-  ```
-  body {
-background: #000;
-color: #808080;
-}```
-<p class="output-example grayscale">Example of output style
-
-</tr></td></table>
+<p class="util-margin-t1" style="background-color: #f00; color: #900">Example of output style</p>
+</div></div>
 Notes:</script>
   </section>
   <section data-markdown data-separator-notes="^Notes:"class="slide ">
     <script type="text/template">
-      ### Let's Develop It
+      #### Color Functions<!-- .element: class="short-title" -->
 
-- Edit your variables in _utilities.scss file to use color functions
+This is the *grayscale* function:
+
+<div class="grid grid-1-1 util-margin-t2">
+<div>
+###### Sass input<!-- .element: class="util-margin-b50 util-center" -->
+```
+$background: #ff0000; // red
+$text: darken($background,50%);
+body {
+  background: grayscale(#f00)</span>;
+  color: grayscale(darken(#f00, 50%));
+}
+```
+</div><div>
+###### CSS output<!-- .element: class="util-margin-b50 util-center" -->
+```
+body {
+  background: #000;
+  color: #808080;
+}
+```
+<p class="util-margin-t1">Example of output style</p>
+</div></div>
+Notes:</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ##### Let's Develop It!
+<hr>
+
+<div class="grid grid-1-1 util-margin-t2">
+- Edit your variables in `_utilities.scss` file to use color functions
 - Refer to the <a target="_blank" href="http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html">sass-lang.com docs</a>
 - Compile to CSS to see your changes
-<li class="blue">Bonus - change the color scheme of your website without editing styles.scss!
+- Bonus - change the color scheme of your website without editing styles.scss!
 
 ```
 lighten(#000, 20%)
@@ -852,38 +760,50 @@ darken(#eee, 30%)
 grayscale(#2a79af)
 saturate(#2a79af, 40%)
 invert(#2a79af)```
+</div>
+Notes:</script>
+  </section>
+
+  <section data-markdown data-separator-notes="^Notes:"class="slide section-card">
+    <script type="text/template">
+      # Comments
+###### Intro to Sass<!-- .element: class="short-title" -->
 Notes:</script>
   </section>
   <section data-markdown data-separator-notes="^Notes:"class="slide ">
     <script type="text/template">
-      ### Comments
+      ### Comments<!-- .element: class="short-title" -->
 
 Traditional CSS comments are downloaded by the user. With Sass, we can specify whether comments are left in the final CSS code or are only visible to the developer:
-<table class="code-compare">
-  <tr><td>
 
-  Sass input:
-  ```
-  <span class="comment">/* Multiline comments will appear
-in the final CSS file */</span>
-<span class="value">//This single-line comment won't</span>
+<div class="grid grid-1-1 util-margin-t2">
+<div>
+###### Sass input<!-- .element: class="util-margin-b50 util-center" -->
+```
+/* Multiline comments will appear
+in the final CSS file */
+// This single-line comment won't
 a { color: blue; }
 ```
-</td>
-<td>
-
-  CSS output:
-  ```
-  <span class="comment">/* Multiline comments will appear
-in the final CSS file */</span>
+</div><div>
+###### CSS output<!-- .element: class="util-margin-b50 util-center" -->
+```
+/* Multiline comments will appear
+in the final CSS file */
 a { color: blue; }```
+</div></div>
+Notes:</script>
+  </section>
 
-</tr></td></table>
+  <section data-markdown data-separator-notes="^Notes:"class="slide section-card">
+    <script type="text/template">
+      # Mixins
+###### Intro to Sass<!-- .element: class="short-title" -->
 Notes:</script>
   </section>
   <section data-markdown data-separator-notes="^Notes:"class="slide ">
     <script type="text/template">
-      ### Mixins
+      ### Mixins<!-- .element: class="short-title" -->
 
  Mixins are really just a collection of one or more styles that are reusable, like variables are reusable values
 <table class="code-compare">
@@ -891,9 +811,9 @@ Notes:</script>
 
   Sass input:
   ```
-  <span class="value">@mixin dropshadow(<span class="variable">$text</span>)</span> {
-color: <span class="variable">$text</span>;
-text-shadow: 2px 4px lighten(<span class="variable">$text</span>, 50%);
+  <span class="value">@mixin dropshadow($text</span>)</span> {
+color: $text</span>;
+text-shadow: 2px 4px lighten($text</span>, 50%);
 }
 p {
 <span class="value">@include dropshadow(black);</span>
@@ -915,20 +835,32 @@ Notes:</script>
   </section>
   <section data-markdown data-separator-notes="^Notes:"class="slide ">
     <script type="text/template">
-      ### Mixins
+      ### Mixins<!-- .element: class="short-title" -->
 
-These are especially useful for CSS3 rules that need browser prefixes, like gradients.
+These are especially useful for CSS rules that need<br>browser prefixes for older browsers, like gradients.
 
-<a target="_blank" href="http://cfarm.co/gradient">cfarm.co/gradient</a>
+```scss
+@mixin vertical-gradient( $top, $bottom ) {
+	background: $top;
+	background: -moz-linear-gradient( top, $top 0%, $bottom 100% );
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0%,$top), color-stop(100%,$bottom) );
+	background: -webkit-linear-gradient( top, $top 0%, $bottom 100% );
+	background: -o-linear-gradient( top, $top 0%, $bottom 100% );
+	background: -ms-linear-gradient( top, $top 0%, $bottom 100% );
+	background: linear-gradient( top, $top 0%, $bottom 100% );
+}
+```
 Notes:</script>
   </section>
   <section data-markdown data-separator-notes="^Notes:"class="slide ">
     <script type="text/template">
-      ### Let's Develop It
+      ##### Let's Develop It!
+<hr>
 
-- Add some mixins to your _utilities.scss file - a good candidate is any style that needs a browser prefix
+<div class="grid grid-2-1">
+- Add some mixins to `_utilities.scss` - a good candidate is any style that needs a browser prefix
 - Try replacing the footer gradient with a mixin
-- Use these mixins in your styles.scss file
+- Use these mixins in your `styles.scss` file
 - Add different types of comments that describe what your mixins do, and check the final CSS in the browser inspector to see if they appear
 
 ```
@@ -940,11 +872,7 @@ property: value;
 property: $argument;
 }
 ```
-Notes:</script>
-  </section>
-  <section data-markdown data-separator-notes="^Notes:"class="slide ">
-    <script type="text/template">
-      Questions
+</div>
 Notes:</script>
   </section>
 

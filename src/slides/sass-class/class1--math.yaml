@@ -9,43 +9,49 @@ slides:
 
   -
     content: |
-      ### Math Operations
+      ### Math Operations<!-- .element: class="short-title" -->
 
-      With CSS you have to be explicit about everything, including numbers. With Sass, you can write math to calculate numbers for you:
+      With Sass, you can write math to calculate numbers for you:
 
-      <table style="display: block;margin: 0 auto; width: 300px;">
+      <table style=" margin: 4rem auto; width: 30%;">
         <!--tr><th>Symbol</th><th>Meaning</th></tr-->
         <tr><td>+</td><td><a target="_blank" href="http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#number_operations">Addition</a></td></tr>
         <tr><td>-</td><td><a target="_blank" href="http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#number_operations">Subtraction</a></td></tr>
-        <tr><td>*</td><td><a target="_blank" href="http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#number_operations">Multiplication</a></td></tr>
-        <tr><td>/</td><td><a target="_blank" href="http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#division-and-slash">Division</a>*</td></tr>
+        <tr><td>&#42;</td><td><a target="_blank" href="http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#number_operations">Multiplication</a></td></tr>
+        <tr><td>/</td><td><a target="_blank" href="http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#division-and-slash">Division</a><sup style="font-size: 50%;">1</sup></td></tr>
       </table>
 
-      <p style="margin-top: 25px;font-size: .6em">*division is special, check the documentation link for why and how
+      <p><small><sup style="font-size: 50%;">1</sup>division is special, check the documentation link for why and how</small></p>
 
   -
     content: |
-      ### Math Operations
-      Sass input:
+      #### Math Operations<!-- .element: class="short-title" -->
+
+      <div class="grid grid-1-1 util-margin-t2">
+      <div>
+      ###### Sass input<!-- .element: class="util-margin-b50 util-center" -->
       ```
       $layoutWidth: 960px;
       #sidebar {
         width: $layoutWidth/3;
       }
       ```
-
-      CSS output:
+      </div><div>
+      ###### CSS output<!-- .element: class="util-margin-b50 util-center" -->
       ```
       #sidebar {
         width: 320px;
       }
       ```
+      </div><div>
 
   -
     content: |
-      ### Math Operations
+      #### Math Operations<!-- .element: class="short-title" -->
 
-      Sass input:
+      <div class="grid grid-1-1 util-margin-t2">
+      <div>
+      ###### Sass input<!-- .element: class="util-margin-b50 util-center" -->
       ```
       $layoutWidth: 960px;
       $defaultPadding: 16px;
@@ -54,19 +60,22 @@ slides:
         width: $layoutWidth - $defaultPadding*2;
       }
       ```
-
-      CSS output:
+      </div><div>
+      ###### CSS output<!-- .element: class="util-margin-b50 util-center" -->
       ```
       #main {
         padding: 16px;
         width: 928px;
       }
       ```
+      </div><div>
 
   -
     content: |
-      ### Let's Develop It
+      ##### Let's Develop It!
+      <hr>
 
+      <div class="grid grid-1-1 util-margin-t2">
       - Write a math expression in Sass to calculate the width of elements in your page layout instead of declaring a number
       - Use a variable to represent the result of your calcuation
       - Compile to CSS and refresh your index page to see your changes
@@ -78,3 +87,4 @@ slides:
         width: ($layoutWidth - 20px);
       }
       ```
+      </div>
