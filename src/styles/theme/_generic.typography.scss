@@ -1,0 +1,217 @@
+// HEADERS
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  color: color(pink);
+  line-height: 1.2;
+  text-shadow: none;
+  word-wrap: break-word;
+}
+
+h1 {
+  font-size: 3em;
+  @include font(heading, lighter);
+  text-shadow: none;
+}
+
+h2 {
+  font-size: 2.25em;
+  color: color(pink);
+  @include font(heading, lighter);
+}
+
+h3 {
+  font-size: 2em;
+  color: color(pink);
+  @include font(heading, lighter);
+}
+
+h4 {
+  font-size: 1.75em;
+  @include font(heading, lighter);
+}
+
+h5 {
+  font-size: 1.5em;
+  @include font(heading, lighter);
+}
+
+h6 {
+  font-size: 1em;
+  text-transform: uppercase;
+  @include font(heading, bolder);
+}
+
+.dark h1 {
+  color: color(pink);
+}
+
+.dark h2 {
+  color: color(pink);
+}
+
+.short-title {
+  font-size: 0.875em;
+  color: color(pink);
+  @include font(heading, bolder);
+  text-transform: uppercase;
+  letter-spacing: 0.0625em;
+  position: absolute;
+  margin: 0;
+  top: 2em;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.section-card .short-title {
+  color: lighten(color(pink), 25%);
+}
+
+// Other type
+p {
+  font-size: 1.25em;
+  margin: 0;
+  line-height: 1.3;
+
+  &:empty {
+    display: none;
+  }
+}
+
+li {
+  position: relative;
+}
+
+li + li {
+  margin-top: 0.5em;
+}
+
+ol,
+ul {
+  line-height: 1.2;
+  font-size: 1.25em;
+  color: color(gray);
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, div, ol, ul, blockquote, pre {
+  &:not(:empty) + h1,
+  &:not(:empty) + h2,
+  &:not(:empty) + h3,
+  &:not(:empty) + h4,
+  &:not(:empty) + h5,
+  &:not(:empty) + h6,
+  &:not(:empty) + blockquote,
+  &:not(:empty) + p,
+  &:not(:empty) + ol,
+  &:not(:empty) + ul,
+  &:not(:empty) + pre {
+    margin-top: 1em;
+  }
+}
+
+pre code {
+  @include font(code, lighter);
+  padding: 0.7em;
+}
+
+strong,
+b {
+  font-weight: bold;
+}
+
+em, i {
+  font-style: italic;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+  li::before {
+    position: absolute;
+    right: calc(100% + 0.25em);
+    content: '\25B8';
+    color: color(pink);
+  }
+}
+
+ol,
+ul,
+dl {
+  text-align: left;
+}
+
+ul ul {
+  li::before {
+    content: '-';
+  }
+}
+
+ul ul ul {
+  li::before {
+    content: '•';
+  }
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  display: block;
+  margin-left: 2.5rem;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 2.5rem;
+}
+
+q,
+blockquote {
+  quotes: none;
+}
+
+blockquote {
+  display: block;
+  position: relative;
+  width: 70%;
+  margin: 1.5rem auto;
+  padding: 0.25rem;
+  font-style: italic;
+  background: rgba( gray(0), 0.05);
+}
+
+blockquote p:first-child,
+blockquote p:last-child {
+  display: inline-block;
+}
+
+q {
+  font-style: italic;
+}
+
+sup {
+  vertical-align: super;
+}
+
+sub {
+  vertical-align: sub;
+}
+
+small {
+  display: inline-block;
+  font-size: 0.6em;
+  line-height: 1.2em;
+  vertical-align: top;
+}
+
+small * {
+  vertical-align: top;
+}

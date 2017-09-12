@@ -1,0 +1,181 @@
+slides:
+  -
+    content: |
+      # Nesting
+      ###### Intro to Sass<!-- .element: class="short-title" -->
+
+    options:
+      class: section-card
+  -
+    content: |
+      #### Nesting<!-- .element: class="short-title" -->
+      ### How it works
+
+      <div class="grid grid-1-1 util-margin-t2">
+      <div>
+      Sass input:
+
+      ```
+      header {
+        color: black;
+        nav {
+          background: red;
+          a { color: white; }
+        }
+      }
+      ```
+      </div><div>
+      CSS output:
+
+      ```
+      header { color: black; }
+      header nav { background: red; }
+      header nav a { color: white; }
+      ```
+      </div></div>
+
+  -
+    content: |
+      #### Nesting<!-- .element: class="short-title" -->
+      ### Referencing Parent Selectors: &
+
+      <div class="grid grid-1-1 util-margin-t2">
+      <div>
+      Sass input:
+      ```
+      nav {
+        background: red;
+        a {
+          color: white;
+          &:hover { text-decoration: underline; }
+        }
+      }
+      ```
+      </div><div>
+      CSS output:
+      ```
+      nav { background: red; }
+      nav a { color: white; }
+      nav a:hover { text-decoration: underline; }
+      ```
+      </div></div>
+
+  -
+    content: |
+      ### Let's Develop It!
+
+        - Open your <span class="blue">styles.scss</span> file
+        - Rewrite some styles to use nesting and referencing the parent
+        - Look for selectors that share a common parent HTML element, like header, nav, footer, #main
+        - Look for hover styles, or add some, to practice referencing the parent with &
+        - There are lots of possible solutions! Be creative!
+        - Run the <a href="#/17" target="_blank">sass --watch command</a> to see your changes in the browser
+
+  -
+    content: |
+      ### Break Time!
+
+      Stand up and stretch - we'll resume in 5 minutes
+
+  -
+    content: |
+      # Variables
+      ###### Intro to Sass<!-- .element: class="short-title" -->
+
+    options:
+      class: section-card
+
+  -
+    content: |
+      ### Variables<!-- .element: class="short-title" -->
+
+      Sometimes you want to reuse a value for a style - you use them frequently, they're hard to type or remember, such as
+
+      - Colors `#2a79af`
+      - [Font stack styles](http://cssfontstack.com) `Georgia, Times, "Times New Roman", serif;`
+      - Font sizes `1.675em`
+
+  -
+    content: |
+      #### Variables<!-- .element: class="short-title" -->
+      ### Defining Variables
+
+      Variables with Sass let us reuse values more than once, while only defining them in one place
+
+      ```
+      //define using dollar sign
+      $brandColor: #f90000;
+      $mainTextcolor: #fff;
+      $accentColor: #ccc;
+      ```
+
+      To create a variable you need a dollar sign before the name of your variable, and a colon: to give it a <em>value</em>
+
+      Note that in Sass files, you can comment out a line with <span class="green">// two slashes</span>
+
+  -
+    content: |
+      ```
+      $brandColor: #f90000; // red
+      $mainTextcolor: #fff; // white
+      $accentColor: #ccc; // grey
+
+      header {
+        color: $mainTextColor;
+        background-color: $brandColor;
+      }
+      .content {
+        color: $mainTextColor;
+        background-color: $accentColor;
+      }
+      footer {
+        color: $accentColor;
+        background-color: $brandColor;
+      }
+      ```
+
+  -
+    content: |
+      #### Variables<!-- .element: class="short-title" -->
+      ### Keep em together
+
+      Variables are easy to change if you keep them all in one stylesheet, and update or add to the styles as needed
+      ```
+      // Let's define some variables
+      // Colors
+      $favoriteColor: #2a79af;
+      $anotherColor: #f05b62;
+      // Fonts
+      $favoriteFont: Papyrus, fantasy;
+      $aPracticalFont: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+      // Font sizes
+      $aNiceBigFontSize: 16px;
+      $finePrint: 10px;
+      $giantLogo: 36px;
+      // Margins and Padding
+      $defaultMargin: 15px;
+      $defaultPadding: $defaultMargin;
+      ```
+
+  -
+    content: |
+      ### Let’s Develop It!
+      <hr>
+
+      - Create a new Sass stylesheet called _utilities.scss
+      - Don't forget to put it in the right folder
+      - Import your new stylesheet into styles.scss by putting the following code at the top of styles.scss: `@import "_utilities";`
+      - In your new stylesheet, make some new variables, and base some variables on your existing styles - look for colors, fonts, and size values
+      - Run the <a href="#/17" target="_blank">sass --watch command</a> to see your changes in the browser
+
+  -
+    options:
+      hidden: true
+    content: |
+      ### Syntax highlighting
+      You can download tools to highlight your Sass properly in Sublime Text:
+      - <a target="_blank" href="http://wbond.net/sublime_packages/package_control/installation">Install Package Manager for Sublime Text 2</a>
+      - Go to Tools > Command Palette. Type "Package Control".
+      - Click "Install Package"
+      - Type "Sass" and click the first result
+      - Click: View > Syntax > Sass

@@ -1,0 +1,71 @@
+slides:
+  -
+    content: |
+      # What Does Sass Do?
+      ###### Intro to Sass<!-- .element: class="short-title" -->
+
+    options:
+      class: section-card
+
+  -
+    content: |
+      ## What does Sass do?<!-- .element: class="short-title" -->
+
+      #### Variables
+
+      ```scss
+        $brandColor: #f90000;
+        $accentColor: #fff;
+        header {
+          background-color: $brandColor;
+          color: $accentColor;
+        }
+        header a { color: $accentColor; }
+      ```
+
+  -
+    content: |
+      ## What does Sass do?<!-- .element: class="short-title" -->
+
+      #### Nesting
+
+      ```scss
+      header {
+        background-color: $brandColor;
+        color: $accentColor;
+        a {
+          color: $accentColor;
+        }
+      }
+      ```
+
+  -
+    content: |
+      ## What does Sass do?<!-- .element: class="short-title" -->
+
+      #### Mixins
+
+      ```
+        @mixin visually-hidden {
+          text-indent: 100%;
+          white-space: nowrap;
+          overflow: hidden;
+        }
+        .image-replace {
+          @include visually-hidden;
+          background: url(logo.png) no-repeat;
+        }
+      ```
+
+  -
+    content: |
+      ## What does Sass do?<!-- .element: class="short-title" -->
+
+      #### More examples
+
+      - [Cross-Browser CSS3 Gradients](http://codepen.io/cfarm/pen/jteAG)
+      - [Cross-Browser Box-shadow (drop shadow) effects](http://codepen.io/cfarm/pen/rkEIo)
+      - [Inner Text Shadow effect](http://codepen.io/andrewboyd/pen/LmIxi)
+      - [Animated CSS Progress Bars](http://codepen.io/krisbulman/pen/ACnHl)
+      - [Multiple CSS Animations in a sequence](http://codepen.io/canarymason/details/BFlHD)
+      - [Off-Canvas Responsive Layout](http://oddbird.net/demos/susy-off-canvas)

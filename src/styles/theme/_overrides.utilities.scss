@@ -1,0 +1,39 @@
+.util-full-width {
+  width: 100% ;
+}
+
+.util-left {
+  text-align: left;
+}
+
+.util-center {
+  text-align: center;
+}
+
+.util-right {
+  text-align: right;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-stretch {
+  align-items: stretch;
+}
+
+.util-pink {
+  color: color(pink) !important;
+}
+
+.util-blue {
+color: color(blue) !important;
+}
+
+.util-green {
+color: color(green) !important;
+}
+
+.util-gray {
+  color: color(gray) !important;
+}

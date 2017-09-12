@@ -1,0 +1,17 @@
+.section-card {
+  color: gray(0) !important;
+
+  h1 {
+    color: gray(0);
+    margin-bottom: 1em;
+  }
+
+  a[href] {
+    color: inherit;
+  }
+}
+
+.section-card.slide-background {
+  background-color: color(pink) !important;
+  display: block !important;
+}

@@ -1,0 +1,54 @@
+slides:
+  -
+    content: |
+      # Tools
+      ###### Intro to Sass<!-- .element: class="short-title" -->
+
+    options:
+      class: section-card
+
+  -
+    content: |
+      ###### Tools <!-- .element: class="short-title" -->
+
+      ### Modern Browser
+
+      <ul class="util-margin-t1 util-margin-b2" style="display: flex;">
+        <li class="util-margin-t0">Safari</li>
+        <li class="util-margin-t0 util-margin-l2">Chrome</li>
+        <li class="util-margin-t0 util-margin-l2">Firefox</li>
+        <li class="util-margin-t0 util-margin-l2">Edge</li>
+        <li class="util-margin-t0 util-margin-l2">Opera</li>
+      </ul>
+
+  -
+    content: |
+      ###### Tools <!-- .element: class="short-title" -->
+      ### Command Line
+
+      - Terminal for Mac (Find in Applications> Utilities)
+      - Git for Windows ([see how to install](https://openhatch.org/missions/windows-setup/install-git-bash))
+
+  -
+    content: |
+      ###### Tools <!-- .element: class="short-title" -->
+      ### Text Editor
+
+      - Atom - Mac or Windows ([atom.oi](http://atom.io))
+      - Sublime Text - Mac or Windows ([sublimetext.com](http://www.sublimetext.com))
+
+  -
+    content: |
+      # Terms
+      ###### Intro to Sass<!-- .element: class="short-title" -->
+
+    options:
+      class: section-card
+
+  -
+    content: |
+      - **Ruby:** A programming language
+      - **Node:** A Server-side JavaScript implementation
+      - **Preprocessor:** A computer program that modifies data to conform with the input requirements of another program. (Sass is a preprocessor)
+      - **Compile:** The act of converting one computer program into another programming language.
+      - **CSS:** The output of Sass. Sass compiles into CSS (Cascading Stylesheets)!

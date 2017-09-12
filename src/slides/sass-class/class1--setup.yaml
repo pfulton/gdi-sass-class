@@ -1,0 +1,148 @@
+slides:
+  -
+    content: |
+      # Setup
+      ###### Intro to Sass<!-- .element: class="short-title" -->
+
+    options:
+      class: section-card
+
+  -
+    content: |
+      ###### How Sass compiles into CSS
+      <hr>
+
+      1. You write Sass (`.scss` files)
+      2. You run a command (`sass --watch`) on the command line
+      3. `.scss` files compile into `.css` files
+
+  -
+    content: |
+      ###### Command Line Tips
+      <hr>
+
+      - Up one level: `$ cd ../`
+      - Go to your root directory: `$ cd /`
+      - Go to a specific folder: `$ cd Users/yourname/Sites/gdi-sass`
+      - List files in a directory: `$ ls`
+      - [Command Line Cheat Sheet](http://files.fosswire.com/2007/08/fwunixref.pdf)!!! (In class1-exercises folder)
+
+  -
+    content: |
+      # Installing Sass
+      ###### Intro to Sass<!-- .element: class="short-title" -->
+
+    options:
+      class: section-card
+
+  -
+    content: |
+      ## Installing Sass<!-- .element: class="short-title" -->
+      **First, we need to install Ruby:**
+
+      <div class="grid grid-1-1 util-margin-t2">
+        <div>
+          ***Windows***<br>
+          Download Ruby: [rubyinstaller.org](http://rubyinstaller.org/)
+        </div>
+        <div>
+          ***Mac***<br>
+          You're in luck! macOS comes pre-installed with Ruby. Try the following command in Terminal to make sure: `ruby -v`
+        </div>
+      </div>
+
+  -
+    content: |
+      ## Installing Sass<!-- .element: class="short-title" -->
+
+      Now that Ruby is installed, we can install the Sass gem.
+
+      In Terminal or Git Bash:
+      `gem install sass`
+
+  -
+    content: |
+      # Setting up our stylesheets
+      ###### Intro to Sass<!-- .element: class="short-title" -->
+
+    options:
+      class: section-card
+
+  -
+    content: |
+      ### Setting up our stylesheets<!-- .element: class="short-title" -->
+
+      We need to structure our stylesheets before we can compile them.
+
+      - Open the /`class1-exercises` folder
+      - Open the `/practice` folder in your text editor
+      - Open `index.html` in a browser
+
+  -
+    content: |
+      ### Setting up our stylesheets<!-- .element: class="short-title" -->
+      <div class="grid grid-1-1 util-margin-t2">
+
+        <div>
+          <ul>
+            <li> Rename CSS files to have a `.scss` file extension</li>
+            <li>Structure them inside the stylesheets folder as shown on the right.</li>
+          </ul>
+        </div>
+
+        <div>
+      <pre><code>/styles
+        /css (empty for now)
+        /scss
+        /font
+        normalize.scss
+        styles.scss
+      </pre></code>
+        </div>
+      </div>
+
+      Update your `index.html` stylesheet url<br>in `<head>` to point to your `/css` folder.
+
+
+  -
+    content: |
+      # Compiling
+      ###### Intro to Sass<!-- .element: class="short-title" -->
+
+    options:
+      class: section-card
+  -
+    content: |
+      ### Compile with the Sass Watch Command<!-- .element: class="short-title" -->
+      <div class="grid grid-1-1 util-margin-t2">
+      <div>
+
+      - Check out your index.html file in a browser. Looks funky, yes?
+      - We need to compile our .scss (Sass) files to make the CSS work in the browser.
+
+      </div><div>
+
+      - First, navigate via the command line to your /stylesheets directory in the "practice" folder.
+      - Then type:
+
+      `$ sass --watch scss:css`
+      </div>
+      </div>
+  -
+    content: |
+      ### Compile with the Sass Watch Command<!-- .element: class="short-title" -->
+
+      Let's break this command down&mdash;you're going to use it *a lot*!
+
+      `$ sass --watch scss:css`
+
+
+      <div class="grid grid-1-1-1 util-margin-t2">
+
+      **--watch** tells Sass to look for changes to our .scss files, and to compile them to css if they have updates.
+
+      The **scss** bit is the folder where our `.scss` files live. We edit these files only.
+
+      The **css** part is the folder where our `.css` are the compiled. The `.css` files only exist after Sass has run.
+
+      </div>
