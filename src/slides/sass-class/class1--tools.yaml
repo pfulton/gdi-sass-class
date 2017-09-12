@@ -39,16 +39,8 @@ slides:
 
   -
     content: |
-      # Terms
-      ###### Intro to Sass<!-- .element: class="short-title" -->
+      ###### Tools <!-- .element: class="short-title" -->
+      ### Resources
 
-    options:
-      class: section-card
-
-  -
-    content: |
-      - **Ruby:** A programming language
-      - **Node:** A Server-side JavaScript implementation
-      - **Preprocessor:** A computer program that modifies data to conform with the input requirements of another program. (Sass is a preprocessor)
-      - **Compile:** The act of converting one computer program into another programming language.
-      - **CSS:** The output of Sass. Sass compiles into CSS (Cascading Stylesheets)!
+      - Sass documentation ([sass-lang.com](http://sass-lang.com))
+      - MDN Web Docs for CSS ([mdn.io/css](http://mdn.io/css))

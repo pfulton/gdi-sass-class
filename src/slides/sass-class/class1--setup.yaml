@@ -42,12 +42,14 @@ slides:
 
       <div class="grid grid-1-1 util-margin-t2">
         <div>
-          ***Windows***<br>
-          Download Ruby: [rubyinstaller.org](http://rubyinstaller.org/)
+        #### Windows
+
+        Download Ruby:<br> [rubyinstaller.org](http://rubyinstaller.org/)
         </div>
         <div>
-          ***Mac***<br>
-          You're in luck! macOS comes pre-installed with Ruby. Try the following command in Terminal to make sure: `ruby -v`
+        #### Mac
+
+        macOS comes pre-installed with Ruby! Try the following command in Terminal to make sure: `ruby -v`
         </div>
       </div>
 

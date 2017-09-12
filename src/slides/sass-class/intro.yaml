@@ -63,7 +63,7 @@ slides:
     content: |
       # Welcome! <!-- .element: class="util-margin-b1" -->
 
-      <div class="grid grid-1-2">
+      <div class="grid grid-1-1">
         <p><strong class="util-pink">Girl Develop It</strong> is here to provide affordable and accessible<br>programs to learn software<br>through mentorship and<br>hands-on instruction.</p>
         <div>
         #### Some "rules"
@@ -87,7 +87,7 @@ slides:
 
   -
     content: |
-      <div class="grid grid-1-2">
+      <div class="grid grid-1-1">
 
         # Now it’s all<br>about you!
 

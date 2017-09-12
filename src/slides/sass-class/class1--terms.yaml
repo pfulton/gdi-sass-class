@@ -1,0 +1,47 @@
+slides:
+  -
+    content: |
+      # Terms
+      ###### Intro to Sass<!-- .element: class="short-title" -->
+
+    options:
+      class: section-card
+
+  -
+    content: |
+      #### Terms <!-- .element: class="short-title" -->
+      ### Ruby
+
+      A programming language
+
+      Sass is built in Ruby and integrates easily with Ruby-based projects.
+  -
+    content: |
+      #### Terms <!-- .element: class="short-title" -->
+      ### libSass
+
+        libSass is port of Sass from Ruby to C/C++,<br>two deeper level programming languages.
+
+        libSass allows Sass to be used without Ruby.
+  -
+    content: |
+      #### Terms <!-- .element: class="short-title" -->
+      ### Preprocessor
+
+      A computer program that modifies data to conform<br>with the input requirements of another program.
+
+      Sass is a preprocessor.
+  -
+    content: |
+      #### Terms <!-- .element: class="short-title" -->
+      ### Compile
+
+      The act of converting one computer program<br>into another programming language.
+  -
+    content: |
+      #### Terms <!-- .element: class="short-title" -->
+      ### CSS
+
+      The output of Sass.
+
+      Sass compiles into CSS!
