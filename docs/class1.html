@@ -38,7 +38,7 @@
       #### Wifi Info <!-- .element: class="blue" -->
 
 **Network:** •••••••<br>
-**Password:** ••••••••
+**Password:** •••••••
 
 <hr>
 
@@ -66,7 +66,7 @@ Notes:Say hi
       #### Wifi Info <!-- .element: class="blue" -->
 
 **Network:** •••••••<br>
-**Password:** ••••••••
+**Password:** •••••••
 
 <hr>
 
@@ -555,6 +555,129 @@ Stand up and stretch - we'll resume in 5 minutes
 Notes:</script>
   </section>
 
+  <section data-markdown data-separator-notes="^Notes:"class="slide section-card">
+    <script type="text/template">
+      # Variables
+###### Intro to Sass<!-- .element: class="short-title" -->
+Notes:</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ### Variables<!-- .element: class="short-title" -->
+
+Sometimes you want to reuse a value for a style - you use them frequently, they're hard to type or remember, such as
+
+- Colors `#2a79af`
+- [Font stack styles](http://cssfontstack.com) `Georgia, Times, "Times New Roman", serif;`
+- Font sizes `1.675em`
+Notes:</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      #### Variables<!-- .element: class="short-title" -->
+
+<div class="grid grid-1-1">
+<div>
+<h3>Defining Variables</h3>
+<p>Variables with Sass let us reuse values more than once, while only defining them in one place</p>
+</div>
+
+```
+//define using dollar sign
+$brandColor: #f90000;
+$mainTextcolor: #fff;
+$accentColor: #ccc;
+```
+</div>
+Notes:</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      #### Variables<!-- .element: class="short-title" -->
+
+<div class="grid grid-1-1 util-margin-t2">
+<div>
+  <h3>Defining Variables</h3>
+  <p>To create a variable you need a dollar sign before the name of<br>your variable, and a colon: to<br>give it a <em>value</em></p>
+<p><small>Note that in Sass files, you can<br>comment out a line with <span class="green">//&nbsp;two slashes</span></small></p>
+</div>
+```
+$brandColor: #f90000; // red
+$mainTextcolor: #fff; // white
+$accentColor: #ccc; // grey
+
+header {
+  color: $mainTextColor;
+  background-color: $brandColor;
+}
+.content {
+  color: $mainTextColor;
+  background-color: $accentColor;
+}
+footer {
+  color: $accentColor;
+  background-color: $brandColor;
+}
+```
+</div>
+Notes:</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      #### Variables<!-- .element: class="short-title" -->
+
+<div class="grid grid-1-1 util-margin-t2">
+<div>
+
+<h3>Group your variables</h3>
+
+<p>Variables are easy to change if you keep them all in one stylesheet, and update or add to the styles as needed.</p>
+
+</div>
+
+```scss
+// Let's define some variables
+// Colors
+$favoriteColor: #2a79af;
+$anotherColor: #f05b62;
+// Fonts
+$favoriteFont: Papyrus, fantasy;
+$aPracticalFont: "Avenir Next", Helvetica, sans-serif;
+// Font sizes
+$aNiceBigFontSize: 16px;
+$finePrint: 10px;
+$giantLogo: 36px;
+// Margins and Padding
+$defaultMargin: 15px;
+$defaultPadding: $defaultMargin;
+```
+
+</div>
+Notes:</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ##### Let's Develop It!
+<hr>
+
+- Create a new Sass stylesheet called _utilities.scss
+- Don't forget to put it in the right folder
+- Import your new stylesheet into styles.scss by putting the following code at the top of styles.scss: `@import "_utilities";`
+- In your new stylesheet, make some new variables, and base some variables on your existing styles - look for colors, fonts, and size values
+- Run the <a href="#/17" target="_blank">sass --watch command</a> to see your changes in the browser
+Notes:</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ### Syntax highlighting
+You can download tools to highlight your Sass properly in Sublime Text:
+- <a target="_blank" href="http://wbond.net/sublime_packages/package_control/installation">Install Package Manager for Sublime Text 2</a>
+- Go to Tools > Command Palette. Type "Package Control".
+- Click "Install Package"
+- Type "Sass" and click the first result
+- Click: View > Syntax > Sass
+Notes:</script>
+  </section>
 
   <section data-markdown data-separator-notes="^Notes:"class="slide section-card">
     <script type="text/template">
