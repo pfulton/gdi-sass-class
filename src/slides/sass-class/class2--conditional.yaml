@@ -1,0 +1,33 @@
+slides:
+  -
+    content: |
+      # Conditionals
+      ### (If / Else Statements)
+      ###### Intro to Sass<!-- .element: class="short-title" -->
+
+    options:
+      class: section-card
+
+
+  -
+    content: |
+      #### Conditionals <!-- .element: class="short-title" -->
+
+      <div class="grid grid-1-1">
+
+        A mixin can be made smarter by utilizing conditions. With conditionals a value can be checked and output the appropriate CSS if the correct conditions are met.
+
+        ```scss
+        @mixin arrow($direction: right) {
+          @if $direction == right {
+          //right arrow styles
+          }
+          @else if $direction == left {
+          // left arrow styles
+          }
+          @else {
+          // default styles
+          }
+        }
+        ```
+      </div>

@@ -1,0 +1,18 @@
+slides:
+  -
+    content: |
+      # What’s Next?
+      ###### Intro to Sass<!-- .element: class="short-title" -->
+
+    options:
+      class: section-card
+
+
+  -
+    content: |
+      #### More Sass <!-- .element: class="short-title" -->
+
+      - [PostCSS](http://postcss.org)
+      - [Autoprefixer](http://autoprefixer.github.io) (PostCSS Plugin)
+      - [CSS Variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables)
+      - [`calc()`](https://developer.mozilla.org/en-US/docs/Web/CSS/calc)

@@ -1,0 +1,40 @@
+slides:
+  -
+    content: |
+      # Custom Functions
+      ###### Intro to Sass<!-- .element: class="short-title" -->
+
+    options:
+      class: section-card
+
+
+  -
+    content: |
+      #### Custom Functions <!-- .element: class="short-title" -->
+
+      Creating your own functions looks similar to a mixin, however, instead of creating a property or set of properties, a function only creates a value.
+
+      <div class="grid grid-1-1-1 util-margin-t2">
+      <div>
+      ###### Function<!-- .element class="util-center" -->
+      ```
+      @function spacing($value) {
+        $number: $value*2;
+        @return $number;
+      }
+      ```
+      </div><div>
+      ###### SCSS Input<!-- .element class="util-center" -->
+      ```
+      .header {
+        margin: spacing(2em) auto;
+      }
+      ```
+      </div><div>
+      ###### CSS Output<!-- .element class="util-center" -->
+      ```
+      .header {
+        margin: 4em auto;
+      }
+      ```
+      </div></div>

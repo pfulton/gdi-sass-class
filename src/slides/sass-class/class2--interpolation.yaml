@@ -1,0 +1,57 @@
+slides:
+  -
+    content: |
+      # Interpolation
+      ###### Intro to Sass<!-- .element: class="short-title" -->
+
+    options:
+      class: section-card
+
+  -
+    content: |
+      #### Interpolation <!-- .element: class="short-title" -->
+
+      <div class="grid grid-1-1">
+
+        With some styles, we may want to use variables right next to text, like with our image rotate style - try it in `_utilities.scss`
+
+        ```scss
+        @mixin rotate($degree, $position) {
+          transform: rotate(-5deg);
+          transform-origin: $position;
+        }
+        ```
+      </div>
+
+  -
+    content: |
+      #### Interpolation <!-- .element: class="short-title" -->
+
+      <div class="grid grid-1-1">
+
+        We do this by using interpolations, which is a special syntax for variables that appear inside regular CSS text:
+
+        ```scss
+        @mixin rotate($degree, $position) {
+          transform: rotate(#{$degree});
+          transform-origin: $position;
+        }
+        ```
+      </div>
+
+  -
+    content: |
+      #### Interpolation <!-- .element: class="short-title" -->
+
+      <div class="grid grid-1-1">
+
+        Interpolations are necessary when using a CSS `calc()` value
+
+        ```scss
+        $spaceLarge: 2em;
+        .header {
+          margin-left: calc(10% - #{$spaceLarge});
+          margin-right: calc(10% - #{$spaceLarge});
+        }
+        ```
+      </div>

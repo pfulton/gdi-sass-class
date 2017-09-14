@@ -1,0 +1,19 @@
+slides:
+  -
+    content: |
+      # More Sass
+      ## The stuff we didn’t cover
+      ###### Intro to Sass<!-- .element: class="short-title" -->
+
+    options:
+      class: section-card
+
+
+  -
+    content: |
+      #### More Sass <!-- .element: class="short-title" -->
+
+      - [Maps](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#Maps)
+      - [`@warn`](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#_warn)
+      - [`@while`](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#_while)
+      - [`@at-root`](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#_at-root__at-root)

@@ -1,0 +1,8 @@
+slides:
+  -
+    content: |
+      # Mixins
+      ###### Intro to Sass<!-- .element: class="short-title" -->
+
+    options:
+      class: section-card

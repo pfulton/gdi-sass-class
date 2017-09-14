@@ -1,0 +1,78 @@
+slides:
+  -
+    content: |
+      # Extends
+      ###### Intro to Sass<!-- .element: class="short-title" -->
+
+    options:
+      class: section-card
+
+
+  -
+    content: |
+      #### Extends <!-- .element: class="short-title" -->
+
+      <div class="grid grid-1-1">
+
+        Sometimes we have styles that duplicate another class, then add to it. We can use a mixin for these, OR we can use @extend:
+
+        ```scss
+        .headline {
+          font-size: 2em;
+          font-weight: bold;
+        }
+        .lead-story-headline {
+          @extend .headline;
+          text-decoration: underline;
+          text-transform: uppercase;
+        }
+        ```
+      </div>
+
+
+  -
+    content: |
+      #### Extends <!-- .element: class="short-title" -->
+
+      ### Placeholder Selectors
+
+      <div class="grid grid-1-1 util-margin-t2">
+
+        Sass has it’s own special kind of selector, specifically created for `@extend`. This selector looks like similar to a class or id, however it uses a percent `%` sign as opposed to a period `.` or hash `#`. Unless used in an `@extend`, these rules will not be rendered to CSS.
+
+        ```scss
+        %font-styles {
+          font-size: 2em;
+          font-weight: bold;
+        }
+        .lead-story-headline {
+          @extend %font-styles;
+          text-decoration: underline;
+          text-transform: uppercase;
+        }
+        ```
+      </div>
+
+
+  -
+    content: |
+      #### Extends <!-- .element: class="short-title" -->
+
+      ### Further Information <!-- .element: class="util-margin-b1" -->
+
+      - A selector can contain multiple `@extend` properties.
+      - A selector can extend a selector that also contains an extend.
+      - Extends cannot be use inside a media query (`@media`).
+
+  -
+    content: |
+      ##### Let's Develop It!
+      <hr>
+
+      - Create new mixins using the following:
+        - Multiple arguments
+        - Default arguments
+        - Interpolation
+        - `@extend` to include common styles
+      - Use these mix-ins in your styles.scss file
+      - Compile to CSS and refresh your index page to see your changes

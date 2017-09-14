@@ -1,0 +1,113 @@
+slides:
+  -
+    content: |
+      # Loops
+      ###### Intro to Sass<!-- .element: class="short-title" -->
+
+    options:
+      class: section-card
+
+  -
+    content: |
+      #### Loops <!-- .element: class="short-title" -->
+
+      <div class="grid grid-1-1 util-margin-t1">
+      <div>
+
+      #### For Loops<!-- .element: class="util-center" -->
+
+      With `@for` loops, you can make Sass write your classes and styles for you.
+
+      ###### Sass input<!-- .element: class="util-center" -->
+
+      ```scss
+      @for $i from 1 through 3 {
+        .column-#{$i} { width: 2em * $i; }
+      }
+      ```
+      </div><div>
+      ###### CSS output<!-- .element: class="util-center" -->
+
+      ```css
+      .column-1 {
+        width: 2em;
+      }
+      .column-2 {
+        width: 4em;
+      }
+      .column-3 {
+        width: 6em;
+      }
+      ```
+      </div></div>
+
+
+  -
+    content: |
+      #### Loops <!-- .element: class="short-title" -->
+
+      <div class="grid grid-1-1 util-margin-t1">
+      <div>
+
+      #### For Loops<!-- .element: class="util-center" -->
+
+      ###### Sass input<!-- .element: class="util-center" -->
+
+      ```scss
+      @for $i from 1 through 3 {
+        .column-#{$i} { width: 2em * $i; }
+      }
+      ```
+      </div><div>
+
+      - Use loops to write classes and styles for you! Use them to make columns that fit within in our layout, and add links to our footer nav in these columns.
+      - Experiment with math in your loop's styles - change the width, padding, even font-size
+      </div></div>
+
+
+  -
+    content: |
+      #### Loops <!-- .element: class="short-title" -->
+
+      <div class="grid grid-1-1 util-margin-t1">
+      <div>
+
+      #### Each Loops<!-- .element: class="util-center" -->
+
+      With `@each`, you can loop through a list of item and create styles for each item in the list.
+
+      ###### Sass input<!-- .element: class="util-center" -->
+
+      ```scss
+      @each $icon in youtube, twitter, facebook {
+        .icon-$icon {
+          background-image: url('#{$icon}.png');
+        }
+      }
+      ```
+      </div><div class="util-margin-t2">
+
+      ###### CSS input<!-- .element: class="util-center" -->
+
+      ```css
+      .icon-youtube {
+        background: url('youtube.png');
+      }
+      .icon-twitter {
+        background: url('twitter.png');
+      }
+      .icon-facebook {
+        background: url('facebook.png');
+      }
+      ```
+      </div></div>
+
+  -
+    content: |
+      ##### Let's Develop It!
+      <hr>
+
+      - Create background image styles for each Famous Woman article
+      - Try [SubtlePatterns.com](http://subtlepatterns.com) for images to use
+      - Write these background styles with `@each` and a list
+      - Bonus: style your social media icons using `@each` and `@if` logic

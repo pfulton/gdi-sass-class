@@ -1,0 +1,581 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Intro to Sass 💖 Girl Develop It</title>
+
+    <meta name="description" content="This is the official Girl Develop It Intro to Sass course.">
+    <meta name="author" content="Catherine Farman">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/gdi.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<!-- <link rel="stylesheet" href="lib/css/atom-one-dark.css"> -->
+
+    <!-- Google Fonts: Lato and Ubuntu Mono -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Ubuntu+Mono:400,400i,700,700i" rel="stylesheet">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+          <section data-markdown data-separator-notes="^Notes:"id="start"class="slide title-card"data-background="#f05b62">
+    <script type="text/template">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 462 215" class="gdi-logo">
+  <g fill-rule="evenodd">
+    <path class="splash" d="M444.6 188.5C434 174 423 140 441 131.5c20.8-9.7 25.7 16 16 24-10 8.2-12.4 33-12.4 33zm-12 10.6c-8-8-17-15-26.8-21-12.5-7-28.2-11.2-42.2-15-35.8-10-16.4-72 30.4-37.7 22.2 16 30.7 47.6 38.6 74.6zM422 140s-31-47-31.3-98.2c-.2-42.8 46.5-52 59.4-28.3 15 27-6 50.4-15 66.3-10.3 19-12.3 60-12.3 60z"/>
+    <path class="gdi" fill-rule="nonzero" d="M7 201.7l11.8-26c12.6 7 25 11.2 41.3 11.2 24 0 35-12 35-34v-6c-10 12.2-21 20-40 20-28 0-54-21-54-57v-.6c0-36.4 26-57 54-57 19 0 30 8 40 18.2V55h34v95c0 22-5 37.8-15.2 48-11.4 11.4-29 16.5-52.6 16.5-20 0-38.4-4.6-54-12.8zm88-91v-.5C95 93.5 82 82 65 82c-16.7 0-29.4 11.4-29.4 28v.4c0 17 12.7 28.3 29.6 28.3 17 0 30-11.7 30-28.4zm42.6 6v-.4c0-40.8 26.6-63 55.5-63 19 0 30 8.4 38 18.2V11.3h35v166.3h-34V160c-8.3 11.4-20 20-38 20-28.3 0-55.4-22.4-55.4-63.2zm94 0v-.4c0-20.3-13.4-33.7-29.6-33.7-16.2 0-29.8 13.2-29.8 33.7v.5c0 20.3 13.7 33.7 29.8 33.7 16.2 0 29.6-13.4 29.6-33.7zm50.8-105.4H319V42h-36.6V11.4zm1 44.2H318v122h-34.6v-122z"/>
+  </g>
+</svg>
+
+# Intro to Sass <!-- .element: class="title" -->
+Take Your CSS to the Next Level
+## Class Two <!-- .element: class="subtitle" -->
+Notes:Say hi
+</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      #### Wifi Info <!-- .element: class="blue" -->
+
+**Network:** •••••••<br>
+**Password:** •••••••
+
+<hr>
+
+Please download workshop files at<br>
+[paz.cc/gdi-sass/files](http://paz.cc/gdi-sass/files)
+Notes:</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      # Class notes
+
+**All slides are available at:**<br>
+[paz.cc/gdi-sass/slides](http://paz.cc/gdi-sass/slides)
+
+**Collaborative Notes:**<br>
+[paz.cc/gdi-sass/notes](http://paz.cc/gdi-sass/notes)
+Notes:</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      # Welcome! <!-- .element: class="util-margin-b1" -->
+
+<div class="grid grid-1-1">
+  <p><strong class="util-pink">Girl Develop It</strong> is here to provide affordable and accessible<br>programs to learn software<br>through mentorship and<br>hands-on instruction.</p>
+  <div>
+  #### Some "rules"
+
+  - We are here for you
+  - Every question is important
+  - Help each other
+  - Have fun
+  </div>
+</div>
+Notes:</script>
+  </section>
+
+  <section data-markdown data-separator-notes="^Notes:"class="slide section-card">
+    <script type="text/template">
+      # Mixins
+###### Intro to Sass<!-- .element: class="short-title" -->
+Notes:</script>
+  </section>
+
+  <section data-markdown data-separator-notes="^Notes:"class="slide section-card">
+    <script type="text/template">
+      # Interpolation
+###### Intro to Sass<!-- .element: class="short-title" -->
+Notes:</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      #### Interpolation <!-- .element: class="short-title" -->
+
+<div class="grid grid-1-1">
+
+  With some styles, we may want to use variables right next to text, like with our image rotate style - try it in `_utilities.scss`
+
+  ```scss
+  @mixin rotate($degree, $position) {
+    transform: rotate(-5deg);
+    transform-origin: $position;
+  }
+  ```
+</div>
+Notes:</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      #### Interpolation <!-- .element: class="short-title" -->
+
+<div class="grid grid-1-1">
+
+  We do this by using interpolations, which is a special syntax for variables that appear inside regular CSS text:
+
+  ```scss
+  @mixin rotate($degree, $position) {
+    transform: rotate(#{$degree});
+    transform-origin: $position;
+  }
+  ```
+</div>
+Notes:</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      #### Interpolation <!-- .element: class="short-title" -->
+
+<div class="grid grid-1-1">
+
+  Interpolations are necessary when using a CSS `calc()` value
+
+  ```scss
+  $spaceLarge: 2em;
+  .header {
+    margin-left: calc(10% - #{$spaceLarge});
+    margin-right: calc(10% - #{$spaceLarge});
+  }
+  ```
+</div>
+Notes:</script>
+  </section>
+
+  <section data-markdown data-separator-notes="^Notes:"class="slide section-card">
+    <script type="text/template">
+      # Extends
+###### Intro to Sass<!-- .element: class="short-title" -->
+Notes:</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      #### Extends <!-- .element: class="short-title" -->
+
+<div class="grid grid-1-1">
+
+  Sometimes we have styles that duplicate another class, then add to it. We can use a mixin for these, OR we can use @extend:
+
+  ```scss
+  .headline {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  .lead-story-headline {
+    @extend .headline;
+    text-decoration: underline;
+    text-transform: uppercase;
+  }
+  ```
+</div>
+Notes:</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      #### Extends <!-- .element: class="short-title" -->
+
+### Placeholder Selectors
+
+<div class="grid grid-1-1 util-margin-t2">
+
+  Sass has it’s own special kind of selector, specifically created for `@extend`. This selector looks like similar to a class or id, however it uses a percent `%` sign as opposed to a period `.` or hash `#`. Unless used in an `@extend`, these rules will not be rendered to CSS.
+
+  ```scss
+  %font-styles {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  .lead-story-headline {
+    @extend %font-styles;
+    text-decoration: underline;
+    text-transform: uppercase;
+  }
+  ```
+</div>
+Notes:</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      #### Extends <!-- .element: class="short-title" -->
+
+### Further Information <!-- .element: class="util-margin-b1" -->
+
+- A selector can contain multiple `@extend` properties.
+- A selector can extend a selector that also contains an extend.
+- Extends cannot be use inside a media query (`@media`).
+Notes:</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ##### Let's Develop It!
+<hr>
+
+- Create new mixins using the following:
+  - Multiple arguments
+  - Default arguments
+  - Interpolation
+  - `@extend` to include common styles
+- Use these mix-ins in your styles.scss file
+- Compile to CSS and refresh your index page to see your changes
+Notes:</script>
+  </section>
+
+  <section data-markdown data-separator-notes="^Notes:"class="slide section-card">
+    <script type="text/template">
+      # Conditionals
+### (If / Else Statements)
+###### Intro to Sass<!-- .element: class="short-title" -->
+Notes:</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      #### Conditionals <!-- .element: class="short-title" -->
+
+<div class="grid grid-1-1">
+
+  A mixin can be made smarter by utilizing conditions. With conditionals a value can be checked and output the appropriate CSS if the correct conditions are met.
+
+  ```scss
+  @mixin arrow($direction: right) {
+    @if $direction == right {
+    //right arrow styles
+    }
+    @else if $direction == left {
+    // left arrow styles
+    }
+    @else {
+    // default styles
+    }
+  }
+  ```
+</div>
+Notes:</script>
+  </section>
+
+  <section data-markdown data-separator-notes="^Notes:"class="slide section-card">
+    <script type="text/template">
+      # Break Time!
+
+Stand up and stretch - we'll resume in 5 minutes
+Notes:</script>
+  </section>
+
+  <section data-markdown data-separator-notes="^Notes:"class="slide section-card">
+    <script type="text/template">
+      # Loops
+###### Intro to Sass<!-- .element: class="short-title" -->
+Notes:</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      #### Loops <!-- .element: class="short-title" -->
+
+<div class="grid grid-1-1 util-margin-t1">
+<div>
+
+#### For Loops<!-- .element: class="util-center" -->
+
+With `@for` loops, you can make Sass write your classes and styles for you.
+
+###### Sass input<!-- .element: class="util-center" -->
+
+```scss
+@for $i from 1 through 3 {
+  .column-#{$i} { width: 2em * $i; }
+}
+```
+</div><div>
+###### CSS output<!-- .element: class="util-center" -->
+
+```css
+.column-1 {
+  width: 2em;
+}
+.column-2 {
+  width: 4em;
+}
+.column-3 {
+  width: 6em;
+}
+```
+</div></div>
+Notes:</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      #### Loops <!-- .element: class="short-title" -->
+
+<div class="grid grid-1-1 util-margin-t1">
+<div>
+
+#### For Loops<!-- .element: class="util-center" -->
+
+###### Sass input<!-- .element: class="util-center" -->
+
+```scss
+@for $i from 1 through 3 {
+  .column-#{$i} { width: 2em * $i; }
+}
+```
+</div><div>
+
+- Use loops to write classes and styles for you! Use them to make columns that fit within in our layout, and add links to our footer nav in these columns.
+- Experiment with math in your loop's styles - change the width, padding, even font-size
+</div></div>
+Notes:</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      #### Loops <!-- .element: class="short-title" -->
+
+<div class="grid grid-1-1 util-margin-t1">
+<div>
+
+#### Each Loops<!-- .element: class="util-center" -->
+
+With `@each`, you can loop through a list of item and create styles for each item in the list.
+
+###### Sass input<!-- .element: class="util-center" -->
+
+```scss
+@each $icon in youtube, twitter, facebook {
+  .icon-$icon {
+    background-image: url('#{$icon}.png');
+  }
+}
+```
+</div><div class="util-margin-t2">
+
+###### CSS input<!-- .element: class="util-center" -->
+
+```css
+.icon-youtube {
+  background: url('youtube.png');
+}
+.icon-twitter {
+  background: url('twitter.png');
+}
+.icon-facebook {
+  background: url('facebook.png');
+}
+```
+</div></div>
+Notes:</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ##### Let's Develop It!
+<hr>
+
+- Create background image styles for each Famous Woman article
+- Try [SubtlePatterns.com](http://subtlepatterns.com) for images to use
+- Write these background styles with `@each` and a list
+- Bonus: style your social media icons using `@each` and `@if` logic
+Notes:</script>
+  </section>
+
+  <section data-markdown data-separator-notes="^Notes:"class="slide section-card">
+    <script type="text/template">
+      # Custom Functions
+###### Intro to Sass<!-- .element: class="short-title" -->
+Notes:</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      #### Custom Functions <!-- .element: class="short-title" -->
+
+Creating your own functions looks similar to a mixin, however, instead of creating a property or set of properties, a function only creates a value.
+
+<div class="grid grid-1-1-1 util-margin-t2">
+<div>
+###### Function<!-- .element class="util-center" -->
+```
+@function spacing($value) {
+  $number: $value*2;
+  @return $number;
+}
+```
+</div><div>
+###### SCSS Input<!-- .element class="util-center" -->
+```
+.header {
+  margin: spacing(2em) auto;
+}
+```
+</div><div>
+###### CSS Output<!-- .element class="util-center" -->
+```
+.header {
+  margin: 4em auto;
+}
+```
+</div></div>
+Notes:</script>
+  </section>
+
+  <section data-markdown data-separator-notes="^Notes:"class="slide section-card">
+    <script type="text/template">
+      # More Sass
+## The stuff we didn’t cover
+###### Intro to Sass<!-- .element: class="short-title" -->
+Notes:</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      #### More Sass <!-- .element: class="short-title" -->
+
+- [Maps](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#Maps)
+- [`@warn`](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#_warn)
+- [`@while`](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#_while)
+- [`@at-root`](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#_at-root__at-root)
+Notes:</script>
+  </section>
+
+  <section data-markdown data-separator-notes="^Notes:"class="slide section-card">
+    <script type="text/template">
+      # What’s Next?
+###### Intro to Sass<!-- .element: class="short-title" -->
+Notes:</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      #### More Sass <!-- .element: class="short-title" -->
+
+- [PostCSS](http://postcss.org)
+- [Autoprefixer](http://autoprefixer.github.io) (PostCSS Plugin)
+- [CSS Variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables)
+- [`calc()`](https://developer.mozilla.org/en-US/docs/Web/CSS/calc)
+Notes:</script>
+  </section>
+
+  <section data-markdown data-separator-notes="^Notes:"id="week1-end"class="slide title-card"data-background="#f05b62">
+    <script type="text/template">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 462 215" class="gdi-logo">
+  <g fill-rule="evenodd">
+    <path class="splash" d="M444.6 188.5C434 174 423 140 441 131.5c20.8-9.7 25.7 16 16 24-10 8.2-12.4 33-12.4 33zm-12 10.6c-8-8-17-15-26.8-21-12.5-7-28.2-11.2-42.2-15-35.8-10-16.4-72 30.4-37.7 22.2 16 30.7 47.6 38.6 74.6zM422 140s-31-47-31.3-98.2c-.2-42.8 46.5-52 59.4-28.3 15 27-6 50.4-15 66.3-10.3 19-12.3 60-12.3 60z"/>
+    <path class="gdi" fill-rule="nonzero" d="M7 201.7l11.8-26c12.6 7 25 11.2 41.3 11.2 24 0 35-12 35-34v-6c-10 12.2-21 20-40 20-28 0-54-21-54-57v-.6c0-36.4 26-57 54-57 19 0 30 8 40 18.2V55h34v95c0 22-5 37.8-15.2 48-11.4 11.4-29 16.5-52.6 16.5-20 0-38.4-4.6-54-12.8zm88-91v-.5C95 93.5 82 82 65 82c-16.7 0-29.4 11.4-29.4 28v.4c0 17 12.7 28.3 29.6 28.3 17 0 30-11.7 30-28.4zm42.6 6v-.4c0-40.8 26.6-63 55.5-63 19 0 30 8.4 38 18.2V11.3h35v166.3h-34V160c-8.3 11.4-20 20-38 20-28.3 0-55.4-22.4-55.4-63.2zm94 0v-.4c0-20.3-13.4-33.7-29.6-33.7-16.2 0-29.8 13.2-29.8 33.7v.5c0 20.3 13.7 33.7 29.8 33.7 16.2 0 29.6-13.4 29.6-33.7zm50.8-105.4H319V42h-36.6V11.4zm1 44.2H318v122h-34.6v-122z"/>
+  </g>
+</svg>
+
+# Intro to Sass<!-- .element: class="title" -->
+
+## Thanks!
+
+End of Class Two
+Notes:</script>
+  </section>
+
+      </div>
+    </div>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions
+        width: 1400,
+        height: 788,
+    
+        // Display controls in the bottom right corner
+        controls: false,
+    
+        // Display a presentation progress bar
+        progress: false,
+    
+        // Display the page number of the current slide
+        slideNumber: false,
+    
+        // Push each slide change to the browser history
+        history: true,
+    
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+    
+        // Enable the slide overview mode
+        overview: true,
+    
+        // Vertical centering of slides
+        center: false,
+    
+        // Enables touch navigation on devices with touch input
+        touch: true,
+    
+        // Loop the presentation
+        loop: false,
+    
+        // Change the presentation direction to be RTL
+        rtl: false,
+    
+        // Turns fragments on and off globally
+        fragments: true,
+    
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+    
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+    
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+    
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+    
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+    
+        // Hides the address bar on mobile devices
+        hideAddressBar: true,
+    
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+    
+        // Transition style
+        transition: 'fade', // none/fade/slide/convex/concave/zoom
+    
+        // Transition speed
+        transitionSpeed: 'fast', // default/fast/slow
+    
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+    
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+    
+        // Parallax background image
+        parallaxBackgroundImage: '', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
+    
+        // Parallax background size
+        parallaxBackgroundSize: '', // CSS syntax, e.g. "2100px 900px"
+    
+        // Optional reveal.js plugins
+        dependencies: [
+            { src: 'plugin/markdown/marked.js' },
+            { src: 'plugin/markdown/markdown.js' },
+            { src: 'plugin/notes/notes.js', async: true },
+            { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+          ]
+      });
+    </script>
+  </body>
+</html>

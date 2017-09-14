@@ -10,12 +10,17 @@ pre {
   line-height: 2;
   word-wrap: break-word;
   background-color: gray(88);
-  border-radius: 0.5em;
+  border-radius: 1rem;
 }
 
 code {
-  border-radius: 0.5em;
+  display: inline-block;
+  border-radius: 0.5rem;
   @include font(code, lighter);
+  font-size: 0.875em;
+  padding: 0 0.125em;
+  background-color: gray(5);
+  box-shadow: 0 0 0 0.125rem gray(10);
 }
 
 pre code {
