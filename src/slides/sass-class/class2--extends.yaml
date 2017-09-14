@@ -74,5 +74,5 @@ slides:
         - Default arguments
         - Interpolation
         - `@extend` to include common styles
-      - Use these mix-ins in your styles.scss file
+      - Use these mixins in your `styles.scss` file
       - Compile to CSS and refresh your index page to see your changes

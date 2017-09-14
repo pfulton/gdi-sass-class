@@ -96,6 +96,76 @@ Notes:</script>
 ###### Intro to Sass<!-- .element: class="short-title" -->
 Notes:</script>
   </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ### Mixins <!-- .element: class="short-title" -->
+
+#### Variable Arguments
+
+<div class="grid grid-1-1-1 util-margin-t3">
+<div>
+
+###### Mixin<!-- .element: class="util-center" -->
+
+```scss
+@mixin block($width, $padding...) {
+  box-sizing: border-box;
+  width: $width;
+  padding: $padding;
+}
+```
+</div><div>
+###### Sass input<!-- .element: class="util-center" -->
+
+```css
+.heading {
+  @inlcude block(30%, 2em 1em 4em);
+}
+```
+</div><div>
+###### CSS output<!-- .element: class="util-center" -->
+
+```css
+.heading {
+  box-sizing: border-box;
+  width: 30%;
+  padding: 2em 1em 4em;
+}
+```
+</div></div>
+Notes:</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ### Mixins <!-- .element: class="short-title" -->
+
+#### Keyword Arguments
+
+<div class="grid grid-2-1 util-margin-t3">
+<div>
+
+###### Mixin<!-- .element: class="util-center" -->
+
+```scss
+@mixin font-style($color:#333, $size:1em, $weight:bold, $family:null) {
+  ...
+}
+```
+</div><div>
+###### Selector<!-- .element: class="util-center" -->
+
+```css
+.heading {
+  @inlcude font-style(
+    $color: tomato,
+    $weight: 800,
+    $family: $sans-serif;
+  );
+}
+```
+</div></div>
+Notes:</script>
+  </section>
 
   <section data-markdown data-separator-notes="^Notes:"class="slide section-card">
     <script type="text/template">
@@ -229,7 +299,7 @@ Notes:</script>
   - Default arguments
   - Interpolation
   - `@extend` to include common styles
-- Use these mix-ins in your styles.scss file
+- Use these mixins in your `styles.scss` file
 - Compile to CSS and refresh your index page to see your changes
 Notes:</script>
   </section>
@@ -398,7 +468,7 @@ Notes:</script>
     <script type="text/template">
       #### Custom Functions <!-- .element: class="short-title" -->
 
-Creating your own functions looks similar to a mixin, however, instead of creating a property or set of properties, a function only creates a value.
+Creating your own functions looks similar to a<br>mixin, however, instead of creating a property or<br>set of properties, a function only creates a value.
 
 <div class="grid grid-1-1-1 util-margin-t2">
 <div>

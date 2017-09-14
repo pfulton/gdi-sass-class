@@ -12,7 +12,7 @@ slides:
     content: |
       #### Custom Functions <!-- .element: class="short-title" -->
 
-      Creating your own functions looks similar to a mixin, however, instead of creating a property or set of properties, a function only creates a value.
+      Creating your own functions looks similar to a<br>mixin, however, instead of creating a property or<br>set of properties, a function only creates a value.
 
       <div class="grid grid-1-1-1 util-margin-t2">
       <div>
