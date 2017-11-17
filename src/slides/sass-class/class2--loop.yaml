@@ -80,7 +80,7 @@ slides:
 
       ```scss
       @each $icon in youtube, twitter, facebook {
-        .icon-$icon {
+        .icon-#{$icon} {
           background-image: url('#{$icon}.png');
         }
       }
@@ -91,13 +91,15 @@ slides:
 
       ```css
       .icon-youtube {
-        background: url('youtube.png');
+        background-image: url("youtube.png");
       }
+
       .icon-twitter {
-        background: url('twitter.png');
+        background-image: url("twitter.png");
       }
+
       .icon-facebook {
-        background: url('facebook.png');
+        background-image: url("facebook.png");
       }
       ```
       </div></div>

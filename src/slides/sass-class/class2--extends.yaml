@@ -14,7 +14,7 @@ slides:
 
       <div class="grid grid-1-1">
 
-        Sometimes we have styles that duplicate another class, then add to it. We can use a mixin for these, OR we can use @extend:
+        Sometimes we have styles that duplicate another class, then add to it. We can use a mixin for these, OR we can use `@extend`:
 
         ```scss
         .headline {
@@ -38,7 +38,7 @@ slides:
 
       <div class="grid grid-1-1 util-margin-t2">
 
-        Sass has it’s own special kind of selector, specifically created for `@extend`. This selector looks like similar to a class or id, however it uses a percent `%` sign as opposed to a period `.` or hash `#`. Unless used in an `@extend`, these rules will not be rendered to CSS.
+        Sass has its own special kind of selector, specifically created for `@extend`. This selector looks like similar to a class or id, however it uses a percent `%` sign as opposed to a period `.` or hash `#`. Unless used in an `@extend`, these rules will not be rendered to CSS.
 
         ```scss
         %font-styles {

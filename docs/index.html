@@ -708,13 +708,13 @@ Notes:</script>
 <div class="grid grid-1-1 util-margin-t2">
 - Write a math expression in Sass to calculate the width of elements in your page layout instead of declaring a number
 - Use a variable to represent the result of your calcuation
-- Compile to CSS and refresh your index page to see your changes
+- Hit "save", and your page should refresh so that you can see your changes.
 
 ```scss
 $layoutWidth: 960px;
 $navWidth: $layoutWidth/3;
 footer {
-  width: ($layoutWidth - 20px);
+  width: ($layoutWidth - 200px);
 }
 ```
 </div>
@@ -934,16 +934,16 @@ Notes:</script>
 <div class="grid grid-2-1">
 - Add some mixins to `_utilities.scss` - a good candidate is any style that needs a browser prefix
 - Try replacing the footer gradient with a mixin
-- Use these mixins in your `styles.scss` file
+- Use these mixins in one of your other Sass partials.
 - Add different types of comments that describe what your mixins do, and check the final CSS in the browser inspector to see if they appear
 
-```
+```scss
 @mixin name {
-property: value;
+  property: value;
 }
 @mixin example($argument) {
-property: value;
-property: $argument;
+  property: value;
+  property: $argument;
 }
 ```
 </div>
@@ -1056,7 +1056,7 @@ Notes:</script>
 
 <div class="grid grid-1-1">
 
-  We do this by using interpolations, which is a special syntax for variables that appear inside regular CSS text:
+  We do this by using interpolation, which is a special syntax for variables that appear inside regular CSS text:
 
   ```scss
   @mixin rotate($degree, $position) {
@@ -1098,7 +1098,7 @@ Notes:</script>
 
 <div class="grid grid-1-1">
 
-  Sometimes we have styles that duplicate another class, then add to it. We can use a mixin for these, OR we can use @extend:
+  Sometimes we have styles that duplicate another class, then add to it. We can use a mixin for these, OR we can use `@extend`:
 
   ```scss
   .headline {
@@ -1122,7 +1122,7 @@ Notes:</script>
 
 <div class="grid grid-1-1 util-margin-t2">
 
-  Sass has it’s own special kind of selector, specifically created for `@extend`. This selector looks like similar to a class or id, however it uses a percent `%` sign as opposed to a period `.` or hash `#`. Unless used in an `@extend`, these rules will not be rendered to CSS.
+  Sass has its own special kind of selector, specifically created for `@extend`. This selector looks like similar to a class or id, however it uses a percent `%` sign as opposed to a period `.` or hash `#`. Unless used in an `@extend`, these rules will not be rendered to CSS.
 
   ```scss
   %font-styles {
@@ -1283,7 +1283,7 @@ With `@each`, you can loop through a list of item and create styles for each ite
 
 ```scss
 @each $icon in youtube, twitter, facebook {
-  .icon-$icon {
+  .icon-#{$icon} {
     background-image: url('#{$icon}.png');
   }
 }
@@ -1294,13 +1294,15 @@ With `@each`, you can loop through a list of item and create styles for each ite
 
 ```css
 .icon-youtube {
-  background: url('youtube.png');
+  background-image: url("youtube.png");
 }
+
 .icon-twitter {
-  background: url('twitter.png');
+  background-image: url("twitter.png");
 }
+
 .icon-facebook {
-  background: url('facebook.png');
+  background-image: url("facebook.png");
 }
 ```
 </div></div>

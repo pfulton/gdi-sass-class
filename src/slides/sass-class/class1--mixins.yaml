@@ -65,16 +65,16 @@ slides:
       <div class="grid grid-2-1">
       - Add some mixins to `_utilities.scss` - a good candidate is any style that needs a browser prefix
       - Try replacing the footer gradient with a mixin
-      - Use these mixins in your `styles.scss` file
+      - Use these mixins in one of your other Sass partials.
       - Add different types of comments that describe what your mixins do, and check the final CSS in the browser inspector to see if they appear
 
-      ```
+      ```scss
       @mixin name {
-      property: value;
+        property: value;
       }
       @mixin example($argument) {
-      property: value;
-      property: $argument;
+        property: value;
+        property: $argument;
       }
       ```
       </div>

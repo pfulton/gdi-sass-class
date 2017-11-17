@@ -78,13 +78,13 @@ slides:
       <div class="grid grid-1-1 util-margin-t2">
       - Write a math expression in Sass to calculate the width of elements in your page layout instead of declaring a number
       - Use a variable to represent the result of your calcuation
-      - Compile to CSS and refresh your index page to see your changes
+      - Hit "save", and your page should refresh so that you can see your changes.
 
       ```scss
       $layoutWidth: 960px;
       $navWidth: $layoutWidth/3;
       footer {
-        width: ($layoutWidth - 20px);
+        width: ($layoutWidth - 200px);
       }
       ```
       </div>

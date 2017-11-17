@@ -29,7 +29,7 @@ slides:
 
       <div class="grid grid-1-1">
 
-        We do this by using interpolations, which is a special syntax for variables that appear inside regular CSS text:
+        We do this by using interpolation, which is a special syntax for variables that appear inside regular CSS text:
 
         ```scss
         @mixin rotate($degree, $position) {
