@@ -10,9 +10,7 @@ slides:
 
       # Intro to Sass<!-- .element: class="title" -->
 
-      ## Thanks!
-
-      End of Class Two
+      ## Thanks!<!-- .element: class="title" -->
 
     options:
         id: week1-end
