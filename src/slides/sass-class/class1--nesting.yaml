@@ -65,9 +65,9 @@ slides:
       ##### Let's Develop It!
       <hr>
 
-        - Open your <span class="blue">styles.scss</span> file
+        - In your browser, go to: [https://goo.gl/yZnrqk](https://goo.gl/yZnrqk)
+        - Open the `_nesting.scss` file.
         - Rewrite some styles to use nesting and referencing the parent
-        - Look for selectors that share a common parent HTML element, like header, nav, footer, #main
-        - Look for hover styles, or add some, to practice referencing the parent with &
+        - Look for selectors that share a common parent HTML element, like `header`, `nav`, `footer`, `main`
+        - Look for hover styles, or add some, to practice referencing the parent with `&`
         - There are lots of possible solutions! Be creative!
-        - Run the <a href="#/17" target="_blank">sass --watch command</a> to see your changes in the browser
