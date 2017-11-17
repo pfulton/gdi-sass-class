@@ -14,15 +14,15 @@ slides:
 
       A programming language
 
-      Sass is built in Ruby and integrates easily with Ruby-based projects.
+      Sass was originally written in Ruby, and because of this, it integrates easily with Ruby-based projects.
   -
     content: |
       #### Terms <!-- .element: class="short-title" -->
-      ### libSass
+      ### LibSass
 
-        libSass is port of Sass from Ruby to C/C++,<br>two deeper level programming languages.
+        LibSass is port of Sass from Ruby to C/C++,<br>two deeper level programming languages.
 
-        libSass allows Sass to be used without Ruby.
+        LibSass allows Sass to be used without Ruby.
   -
     content: |
       #### Terms <!-- .element: class="short-title" -->

@@ -22,17 +22,18 @@ slides:
       #### Variables<!-- .element: class="short-title" -->
 
       <div class="grid grid-1-1">
-      <div>
-      <h3>Defining Variables</h3>
-      <p>Variables with Sass let us reuse values more than once, while only defining them in one place</p>
-      </div>
-
-      ```
-      //define using dollar sign
-      $brandColor: #f90000;
-      $mainTextcolor: #fff;
-      $accentColor: #ccc;
-      ```
+        <div>
+          <h3>Defining Variables</h3>
+          <p>Variables with Sass let us reuse values more than once, while only defining them in one place</p>
+        </div>
+        <div>
+        ```scss
+          // define using dollar sign
+          $brandColor: #f90000;
+          $mainTextcolor: #fff;
+          $accentColor: #ccc;
+        ```
+        </div>
       </div>
 
   -
@@ -108,15 +109,3 @@ slides:
       - Import your new stylesheet into styles.scss by putting the following code at the top of styles.scss: `@import "_utilities";`
       - In your new stylesheet, make some new variables, and base some variables on your existing styles - look for colors, fonts, and size values
       - Run the <a href="#/17" target="_blank">sass --watch command</a> to see your changes in the browser
-
-  -
-    options:
-      hidden: true
-    content: |
-      ### Syntax highlighting
-      You can download tools to highlight your Sass properly in Sublime Text:
-      - <a target="_blank" href="http://wbond.net/sublime_packages/package_control/installation">Install Package Manager for Sublime Text 2</a>
-      - Go to Tools > Command Palette. Type "Package Control".
-      - Click "Install Package"
-      - Type "Sass" and click the first result
-      - Click: View > Syntax > Sass

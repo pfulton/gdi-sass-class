@@ -29,41 +29,6 @@ slides:
 
   -
     content: |
-      # Installing Sass
-      ###### Intro to Sass<!-- .element: class="short-title" -->
-
-    options:
-      class: section-card
-
-  -
-    content: |
-      ## Installing Sass<!-- .element: class="short-title" -->
-      **First, we need to install Ruby:**
-
-      <div class="grid grid-1-1 util-margin-t2">
-        <div>
-        #### Windows
-
-        Download Ruby:<br> [rubyinstaller.org](http://rubyinstaller.org/)
-        </div>
-        <div>
-        #### Mac
-
-        macOS comes pre-installed with Ruby! Try the following command in Terminal to make sure: `ruby -v`
-        </div>
-      </div>
-
-  -
-    content: |
-      ## Installing Sass<!-- .element: class="short-title" -->
-
-      Now that Ruby is installed, we can install the Sass gem.
-
-      In Terminal or Git Bash:
-      `gem install sass`
-
-  -
-    content: |
       # Setting up our stylesheets
       ###### Intro to Sass<!-- .element: class="short-title" -->
 

@@ -12,30 +12,32 @@ slides:
 
        Mixins are really just a collection of one or more styles that are reusable, like variables are reusable values
       <table class="code-compare">
-        <tr><td>
+        <tr>
+          <td>
+          Sass input:
+            ```scss
+            @mixin dropshadow($text) {
+              color: $text;
+              text-shadow: 2px 4px lighten($text, 50%);
+            }
 
-        Sass input:
-        ```
-        <span class="value">@mixin dropshadow($text</span>)</span> {
-      color: $text</span>;
-      text-shadow: 2px 4px lighten($text</span>, 50%);
-      }
-      p {
-      <span class="value">@include dropshadow(black);</span>
-      }
-      ```
-      </td>
-      <td>
-
-        CSS output:
-        ```
-        p {
-      color: black;
-      text-shadow: 2px 4px #808080;
-      }```
-      <p class="output-example" style="color: black; text-shadow: 2px 4px #808080; background: transparent;">Example of output style
-
-      </tr></td></table>
+            p {
+              @include dropshadow(black);
+            }
+            ```
+            </td>
+            <td>
+              CSS output:
+              ```css
+              p {
+                color: black;
+                text-shadow: 2px 4px #808080;
+              }
+              ```
+              <p class="output-example" style="color: black; text-shadow: 2px 4px #808080; background: transparent;">Example of output style</p>
+            </td>
+          </tr>
+        </table>
 
   -
     content: |

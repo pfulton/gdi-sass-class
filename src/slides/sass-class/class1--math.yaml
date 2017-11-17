@@ -80,7 +80,7 @@ slides:
       - Use a variable to represent the result of your calcuation
       - Compile to CSS and refresh your index page to see your changes
 
-      ```
+      ```scss
       $layoutWidth: 960px;
       $navWidth: $layoutWidth/3;
       footer {
