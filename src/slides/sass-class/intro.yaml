@@ -7,10 +7,6 @@ slides:
       **Network:** •••••••<br>
       **Password:** •••••••
 
-      <hr>
-
-      Class Resources<br>
-      [paz.cc/gdi-sass](http://paz.cc/gdi-sass)
   -
     content: |
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 462 215" class="gdi-logo">
@@ -37,10 +33,6 @@ slides:
       **Network:** •••••••<br>
       **Password:** •••••••
 
-      <hr>
-
-      Please download workshop files at<br>
-      [paz.cc/gdi-sass/files](http://paz.cc/gdi-sass/files)
   -
     content: |
       # Thanks to our host
@@ -49,13 +41,14 @@ slides:
 
   -
     content: |
+      ### Thank you to our<br>Teaching Assistants
+
+  -
+    content: |
       # Class notes
 
       **All slides are available at:**<br>
       [paz.cc/gdi-sass/slides](http://paz.cc/gdi-sass/slides)
-
-      **Collaborative Notes:**<br>
-      [paz.cc/gdi-sass/notes](http://paz.cc/gdi-sass/notes)
   -
     content: |
       # Welcome! <!-- .element: class="util-margin-b1" -->
@@ -73,14 +66,12 @@ slides:
       </div>
   -
     content: |
-      ### Thank you to our<br>Teaching Assistants
-  -
-    content: |
       <!-- About your instructor -->
       # Patrick Fulton <!-- .element: class="util-gray" -->
       ### Developer <!-- .element: class="util-margin-t0" -->
       #### Sparkbox <!-- .element: class="util-margin-t0" -->
       #### [@patrickfulton](https://twitter.com/patrickfulton)
+      #### [patrickfulton@gmail.com](mailto:patrickfulton@gmail.com)
 
   -
     content: |

@@ -78,7 +78,7 @@ slides:
       $background: #ff0000; // red
       $text: darken($background,50%);
       body {
-        background: grayscale(#f00)</span>;
+        background: grayscale(#f00);
         color: grayscale(darken(#f00, 50%));
       }
       ```
@@ -103,12 +103,13 @@ slides:
       - Edit your variables in `_utilities.scss` file to use color functions
       - Refer to the <a target="_blank" href="http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html">sass-lang.com docs</a>
       - Compile to CSS to see your changes
-      - Bonus - change the color scheme of your website without editing styles.scss!
+      - Bonus - change the color scheme of your website without editing `main.scss`!
 
       ```
       lighten(#000, 20%)
       darken(#eee, 30%)
       grayscale(#2a79af)
       saturate(#2a79af, 40%)
-      invert(#2a79af)```
+      invert(#2a79af)
+      ```
       </div>

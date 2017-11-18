@@ -7,6 +7,9 @@ slides:
     options:
       class: section-card
 
+    notes: |
+      Before we start jumping into code, we're going to talk a little bit about what Sass actually does and what people do with Sass.
+
   -
     content: |
       ## What does Sass do?<!-- .element: class="short-title" -->
@@ -23,6 +26,9 @@ slides:
         header a { color: $accentColor; }
       ```
 
+    notes: |
+      Sass allows you to create and use variables.
+
   -
     content: |
       ## What does Sass do?<!-- .element: class="short-title" -->
@@ -38,6 +44,9 @@ slides:
         }
       }
       ```
+
+    notes: |
+      Sass supports code nesting, which is a nice way to write CSS. You can easily see how CSS selectors are being built just by looking at the Sass you're writing. There are some dangers here, and we'll talk about that in a bit.
 
   -
     content: |
@@ -57,6 +66,9 @@ slides:
         }
       ```
 
+    notes: |
+      Sass also supports these things called mixins which are, more or less, chunks of reusable code that you can use to compose other bits of code.
+
   -
     content: |
       ## What does Sass do?<!-- .element: class="short-title" -->
@@ -66,3 +78,6 @@ slides:
       - [Cross-Browser CSS3 Gradients](http://codepen.io/cfarm/pen/jteAG)
       - [Cross-Browser Box-shadow (drop shadow) effects](http://codepen.io/cfarm/pen/rkEIo)
       - [Inner Text Shadow effect](http://codepen.io/andrewboyd/pen/LmIxi)
+
+    notes: |
+      These are the core features of Sass that you'll use the most often. There are other things which we'll talk about later today. All of these things are here to help you, and to help abstract your code & make it reusable, and to provide you with a good developer experience.

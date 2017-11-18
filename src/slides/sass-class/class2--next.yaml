@@ -10,7 +10,7 @@ slides:
 
   -
     content: |
-      #### More Sass <!-- .element: class="short-title" -->
+      #### More Sass and/or CSS things <!-- .element: class="short-title" -->
 
       - [PostCSS](http://postcss.org)
       - [Autoprefixer](http://autoprefixer.github.io) (PostCSS Plugin)

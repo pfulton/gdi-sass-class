@@ -109,7 +109,6 @@ slides:
       ##### Let's Develop It!
       <hr>
 
-      - Create background image styles for each Famous Woman article
-      - Try [SubtlePatterns.com](http://subtlepatterns.com) for images to use
+      - Create background color styles for each dog article
+      - Try [color.adobe.com/explore](https://color.adobe.com/explore/?filter=most-popular&time=month) for fun color schemes to use.
       - Write these background styles with `@each` and a list
-      - Bonus: style your social media icons using `@each` and `@if` logic

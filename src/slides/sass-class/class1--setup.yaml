@@ -13,19 +13,11 @@ slides:
       <hr>
 
       1. You write Sass (`.scss` files)
-      2. You run a command (`sass --watch`) on the command line
+      2. You run a command (`sass --watch`) on the command line *
       3. `.scss` files compile into `.css` files
 
-  -
-    content: |
-      ###### Command Line Tips
-      <hr>
-
-      - Up one level: `$ cd ../`
-      - Go to your root directory: `$ cd /`
-      - Go to a specific folder: `$ cd Users/yourname/Sites/gdi-sass`
-      - List files in a directory: `$ ls`
-      - [Command Line Cheat Sheet](http://files.fosswire.com/2007/08/fwunixref.pdf)!!! (In class1-exercises folder)
+    notes: |
+      I put an asterisk here because I want you to know that, at its core, this is what Sass is doing, but this command is no longer universal, and you may have other ways of triggering or running these commands.
 
   -
     content: |
@@ -41,10 +33,6 @@ slides:
 
       We need to structure our stylesheets before we can compile them.
 
-      - Open the /`class1-exercises` folder
-      - Open the `/practice` folder in your text editor
-      - Open `index.html` in a browser
-
   -
     content: |
       ### Setting up our stylesheets<!-- .element: class="short-title" -->
@@ -52,24 +40,24 @@ slides:
 
         <div>
           <ul>
-            <li> Rename CSS files to have a `.scss` file extension</li>
-            <li>Structure them inside the stylesheets folder as shown on the right.</li>
+            <li>Your Sass files need to have a `.scss` extension (ex: `styles.scss`)</li>
+            <li>A suggested structure for files is shown on the right.</li>
           </ul>
         </div>
 
         <div>
-      <pre><code>/styles
+      <pre><code>/dist
         /css (empty for now)
+      /src
         /scss
-        /font
-        normalize.scss
-        styles.scss
+          _partial-1.scss
+          _partial-2.scss
+          styles.scss
       </pre></code>
         </div>
       </div>
 
-      Update your `index.html` stylesheet url<br>in `<head>` to point to your `/css` folder.
-
+      Your structure may vary!
 
   -
     content: |
@@ -80,20 +68,31 @@ slides:
       class: section-card
   -
     content: |
-      ### Compile with the Sass Watch Command<!-- .element: class="short-title" -->
+      ### Compiling our Sass into CSS<!-- .element: class="short-title" -->
       <div class="grid grid-1-1 util-margin-t2">
       <div>
-
-      - Check out your index.html file in a browser. Looks funky, yes?
-      - We need to compile our .scss (Sass) files to make the CSS work in the browser.
+      - We need to compile our `.scss` (Sass) files to make the CSS work in the browser.
+      - How? Sass has commands that you can run to handle compilation.
 
       </div><div>
-
-      - First, navigate via the command line to your /stylesheets directory in the "practice" folder.
-      - Then type:
-
-      `$ sass --watch scss:css`
+      - Just remember: browsers don't understand Sass. You *must* compile Sass to CSS in order to use it in your browser!
       </div>
+      </div>
+  -
+    content: |
+      ### Compiling our Sass into CSS<!-- .element: class="short-title" -->
+      <div class="grid grid-1-1 util-margin-t2">
+      <div>
+      - Core command: `sass input.scss output.css`
+      - "Hey, Sass! Take my `input.scss` Sass file, and turn it into a CSS file called `output.css`, please!"
+
+      </div><div>
+      - You can "watch" your project for changes with `--watch`.
+      </div>
+      </div>
+      <div class="util-margin-t2">
+        - `sass --watch <input folder>:<output folder>`
+        - `sass --watch app/sass:public/stylesheets`
       </div>
   -
     content: |
@@ -113,3 +112,57 @@ slides:
       The **css** part is the folder where our `.css` are the compiled. The `.css` files only exist after Sass has run.
 
       </div>
+  -
+    content: |
+      ### Vocabulary<!-- .element: class="short-title" -->
+      - Files that begin with an underscore are called "partials"
+      - `_utilities.scss`
+      - You will often have many, many partials in your project.
+
+  -
+    content: |
+      ### Vocabulary<!-- .element: class="short-title" -->
+      - Files that DO NOT begin with an underscore are...just "regular" Sass files.
+      - `styles.scss`
+      - You will often have very few "regular" files in your project. *
+
+  -
+    content: |
+      ### Vocabulary<!-- .element: class="short-title" -->
+      What's the difference between a "partial" and a "regular" file?
+      - Partials (`_utilities.scss`) DO NOT compile out to their own CSS files.
+      - Regular files (`styles.scss`) DO compile out to their own CSS files.
+
+  -
+    content: |
+      ### Vocabulary<!-- .element: class="short-title" -->
+      A Sass common practice is to gather all of your partials into one regular file. This is called a "manifest" file.
+      - Uses Sass' `@import` to "import" partials
+      - The cascade is important here! You must `@import` things in the correct order.
+
+  -
+    content: |
+      ### Partials and a manifest<!-- .element: class="short-title" -->
+      <div class="grid grid-1-1 util-margin-t2">
+
+        <div>
+          <ul>
+            <li>Your partials get "imported" into your manifest file.</li>
+          </ul>
+        </div>
+        <div>
+      <pre><code>/dist
+        /css (empty for now)
+      /src
+        /scss
+          _partial-1.scss
+          _partial-2.scss
+          styles.scss
+      </pre></code>
+        </div>
+      </div>
+
+      Your structure may vary!
+
+    notes: |
+      Let's take a look at an actual example.

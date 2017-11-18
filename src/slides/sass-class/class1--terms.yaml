@@ -45,3 +45,20 @@ slides:
       The output of Sass.
 
       Sass compiles into CSS!
+  -
+    content: |
+      #### Other Terms You Might Hear <!-- .element: class="short-title" -->
+      ### Compass
+
+      Compass is (was) an open-source CSS Authoring Framework.
+
+      You can think of it as a big library or framework of Sass mixins. It was an awesome tool for older browser support & vendor prefixes.
+
+  -
+    content: |
+      #### Other Terms You Might Hear <!-- .element: class="short-title" -->
+      ### Bourbon
+
+      A simple and lightweight mixin library for Sass.
+
+      Similar to Compass, but lighter.

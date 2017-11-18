@@ -16,6 +16,8 @@ slides:
       <div class="grid grid-1-1">
 
         A mixin can be made smarter by utilizing conditions. With conditionals a value can be checked and output the appropriate CSS if the correct conditions are met.
+        <br /><br />
+        [Example](https://www.sassmeister.com/gist/e89a57d301d5203ba93423dcd8497f1c)
 
         ```scss
         @mixin arrow($direction: right) {

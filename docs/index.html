@@ -82,6 +82,11 @@ Notes:</script>
   </section>
   <section data-markdown data-separator-notes="^Notes:"class="slide ">
     <script type="text/template">
+      ### Thank you to our<br>Teaching Assistants
+Notes:</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
       # Class notes
 
 **All slides are available at:**<br>
@@ -110,16 +115,12 @@ Notes:</script>
   </section>
   <section data-markdown data-separator-notes="^Notes:"class="slide ">
     <script type="text/template">
-      ### Thank you to our<br>Teaching Assistants
-Notes:</script>
-  </section>
-  <section data-markdown data-separator-notes="^Notes:"class="slide ">
-    <script type="text/template">
       <!-- About your instructor -->
 # Patrick Fulton <!-- .element: class="util-gray" -->
 ### Developer <!-- .element: class="util-margin-t0" -->
 #### Sparkbox <!-- .element: class="util-margin-t0" -->
 #### [@patrickfulton](https://twitter.com/patrickfulton)
+#### [patrickfulton@gmail.com](mailto:patrickfulton@gmail.com)
 Notes:</script>
   </section>
   <section data-markdown data-separator-notes="^Notes:"class="slide ">
@@ -140,7 +141,8 @@ Notes:</script>
     <script type="text/template">
       # What Does Sass Do?
 ###### Intro to Sass<!-- .element: class="short-title" -->
-Notes:</script>
+Notes:Before we start jumping into code, we&#x27;re going to talk a little bit about what Sass actually does and what people do with Sass.
+</script>
   </section>
   <section data-markdown data-separator-notes="^Notes:"class="slide ">
     <script type="text/template">
@@ -157,7 +159,8 @@ Notes:</script>
   }
   header a { color: $accentColor; }
 ```
-Notes:</script>
+Notes:Sass allows you to create and use variables.
+</script>
   </section>
   <section data-markdown data-separator-notes="^Notes:"class="slide ">
     <script type="text/template">
@@ -174,7 +177,8 @@ header {
   }
 }
 ```
-Notes:</script>
+Notes:Sass supports code nesting, which is a nice way to write CSS. You can easily see how CSS selectors are being built just by looking at the Sass you&#x27;re writing. There are some dangers here, and we&#x27;ll talk about that in a bit.
+</script>
   </section>
   <section data-markdown data-separator-notes="^Notes:"class="slide ">
     <script type="text/template">
@@ -193,7 +197,8 @@ Notes:</script>
     background: url(logo.png) no-repeat;
   }
 ```
-Notes:</script>
+Notes:Sass also supports these things called mixins which are, more or less, chunks of reusable code that you can use to compose other bits of code.
+</script>
   </section>
   <section data-markdown data-separator-notes="^Notes:"class="slide ">
     <script type="text/template">
@@ -204,7 +209,8 @@ Notes:</script>
 - [Cross-Browser CSS3 Gradients](http://codepen.io/cfarm/pen/jteAG)
 - [Cross-Browser Box-shadow (drop shadow) effects](http://codepen.io/cfarm/pen/rkEIo)
 - [Inner Text Shadow effect](http://codepen.io/andrewboyd/pen/LmIxi)
-Notes:</script>
+Notes:These are the core features of Sass that you&#x27;ll use the most often. There are other things which we&#x27;ll talk about later today. All of these things are here to help you, and to help abstract your code &amp; make it reusable, and to provide you with a good developer experience.
+</script>
   </section>
 
   <section data-markdown data-separator-notes="^Notes:"class="slide section-card">
@@ -313,6 +319,26 @@ The output of Sass.
 Sass compiles into CSS!
 Notes:</script>
   </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      #### Other Terms You Might Hear <!-- .element: class="short-title" -->
+### Compass
+
+Compass is (was) an open-source CSS Authoring Framework.
+
+You can think of it as a big library or framework of Sass mixins. It was an awesome tool for older browser support & vendor prefixes.
+Notes:</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      #### Other Terms You Might Hear <!-- .element: class="short-title" -->
+### Bourbon
+
+A simple and lightweight mixin library for Sass.
+
+Similar to Compass, but lighter.
+Notes:</script>
+  </section>
 
   <section data-markdown data-separator-notes="^Notes:"class="slide section-card">
     <script type="text/template">
@@ -326,21 +352,10 @@ Notes:</script>
 <hr>
 
 1. You write Sass (`.scss` files)
-2. You run a command (`sass --watch`) on the command line
+2. You run a command (`sass --watch`) on the command line *
 3. `.scss` files compile into `.css` files
-Notes:</script>
-  </section>
-  <section data-markdown data-separator-notes="^Notes:"class="slide ">
-    <script type="text/template">
-      ###### Command Line Tips
-<hr>
-
-- Up one level: `$ cd ../`
-- Go to your root directory: `$ cd /`
-- Go to a specific folder: `$ cd Users/yourname/Sites/gdi-sass`
-- List files in a directory: `$ ls`
-- [Command Line Cheat Sheet](http://files.fosswire.com/2007/08/fwunixref.pdf)!!! (In class1-exercises folder)
-Notes:</script>
+Notes:I put an asterisk here because I want you to know that, at its core, this is what Sass is doing, but this command is no longer universal, and you may have other ways of triggering or running these commands.
+</script>
   </section>
   <section data-markdown data-separator-notes="^Notes:"class="slide section-card">
     <script type="text/template">
@@ -353,10 +368,6 @@ Notes:</script>
       ### Setting up our stylesheets<!-- .element: class="short-title" -->
 
 We need to structure our stylesheets before we can compile them.
-
-- Open the /`class1-exercises` folder
-- Open the `/practice` folder in your text editor
-- Open `index.html` in a browser
 Notes:</script>
   </section>
   <section data-markdown data-separator-notes="^Notes:"class="slide ">
@@ -366,23 +377,24 @@ Notes:</script>
 
   <div>
     <ul>
-      <li> Rename CSS files to have a `.scss` file extension</li>
-      <li>Structure them inside the stylesheets folder as shown on the right.</li>
+      <li>Your Sass files need to have a `.scss` extension (ex: `styles.scss`)</li>
+      <li>A suggested structure for files is shown on the right.</li>
     </ul>
   </div>
 
   <div>
-<pre><code>/styles
+<pre><code>/dist
   /css (empty for now)
+/src
   /scss
-  /font
-  normalize.scss
-  styles.scss
+    _partial-1.scss
+    _partial-2.scss
+    styles.scss
 </pre></code>
   </div>
 </div>
 
-Update your `index.html` stylesheet url<br>in `<head>` to point to your `/css` folder.
+Your structure may vary!
 Notes:</script>
   </section>
   <section data-markdown data-separator-notes="^Notes:"class="slide section-card">
@@ -393,20 +405,33 @@ Notes:</script>
   </section>
   <section data-markdown data-separator-notes="^Notes:"class="slide ">
     <script type="text/template">
-      ### Compile with the Sass Watch Command<!-- .element: class="short-title" -->
+      ### Compiling our Sass into CSS<!-- .element: class="short-title" -->
 <div class="grid grid-1-1 util-margin-t2">
 <div>
-
-- Check out your index.html file in a browser. Looks funky, yes?
-- We need to compile our .scss (Sass) files to make the CSS work in the browser.
+- We need to compile our `.scss` (Sass) files to make the CSS work in the browser.
+- How? Sass has commands that you can run to handle compilation.
 
 </div><div>
-
-- First, navigate via the command line to your /stylesheets directory in the "practice" folder.
-- Then type:
-
-`$ sass --watch scss:css`
+- Just remember: browsers don't understand Sass. You *must* compile Sass to CSS in order to use it in your browser!
 </div>
+</div>
+Notes:</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ### Compiling our Sass into CSS<!-- .element: class="short-title" -->
+<div class="grid grid-1-1 util-margin-t2">
+<div>
+- Core command: `sass input.scss output.css`
+- "Hey, Sass! Take my `input.scss` Sass file, and turn it into a CSS file called `output.css`, please!"
+
+</div><div>
+- You can "watch" your project for changes with `--watch`.
+</div>
+</div>
+<div class="util-margin-t2">
+  - `sass --watch <input folder>:<output folder>`
+  - `sass --watch app/sass:public/stylesheets`
 </div>
 Notes:</script>
   </section>
@@ -429,6 +454,64 @@ The **css** part is the folder where our `.css` are the compiled. The `.css` fil
 
 </div>
 Notes:</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ### Vocabulary<!-- .element: class="short-title" -->
+- Files that begin with an underscore are called "partials"
+- `_utilities.scss`
+- You will often have many, many partials in your project.
+Notes:</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ### Vocabulary<!-- .element: class="short-title" -->
+- Files that DO NOT begin with an underscore are...just "regular" Sass files.
+- `styles.scss`
+- You will often have very few "regular" files in your project. *
+Notes:</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ### Vocabulary<!-- .element: class="short-title" -->
+What's the difference between a "partial" and a "regular" file?
+- Partials (`_utilities.scss`) DO NOT compile out to their own CSS files.
+- Regular files (`styles.scss`) DO compile out to their own CSS files.
+Notes:</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ### Vocabulary<!-- .element: class="short-title" -->
+A Sass common practice is to gather all of your partials into one regular file. This is called a "manifest" file.
+- Uses Sass' `@import` to "import" partials
+- The cascade is important here! You must `@import` things in the correct order.
+Notes:</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ### Partials and a manifest<!-- .element: class="short-title" -->
+<div class="grid grid-1-1 util-margin-t2">
+
+  <div>
+    <ul>
+      <li>Your partials get "imported" into your manifest file.</li>
+    </ul>
+  </div>
+  <div>
+<pre><code>/dist
+  /css (empty for now)
+/src
+  /scss
+    _partial-1.scss
+    _partial-2.scss
+    styles.scss
+</pre></code>
+  </div>
+</div>
+
+Your structure may vary!
+Notes:Let&#x27;s take a look at an actual example.
+</script>
   </section>
 
   <section data-markdown data-separator-notes="^Notes:"class="slide section-card">
@@ -799,7 +882,7 @@ This is the *grayscale* function:
 $background: #ff0000; // red
 $text: darken($background,50%);
 body {
-  background: grayscale(#f00)</span>;
+  background: grayscale(#f00);
   color: grayscale(darken(#f00, 50%));
 }
 ```
@@ -824,14 +907,15 @@ Notes:</script>
 - Edit your variables in `_utilities.scss` file to use color functions
 - Refer to the <a target="_blank" href="http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html">sass-lang.com docs</a>
 - Compile to CSS to see your changes
-- Bonus - change the color scheme of your website without editing styles.scss!
+- Bonus - change the color scheme of your website without editing `main.scss`!
 
 ```
 lighten(#000, 20%)
 darken(#eee, 30%)
 grayscale(#2a79af)
 saturate(#2a79af, 40%)
-invert(#2a79af)```
+invert(#2a79af)
+```
 </div>
 Notes:</script>
   </section>
@@ -952,7 +1036,7 @@ Notes:</script>
 
   <section data-markdown data-separator-notes="^Notes:"class="slide section-card">
     <script type="text/template">
-      # Mixins
+      # Mixins 2 (the sequel)
 ###### Intro to Sass<!-- .element: class="short-title" -->
 Notes:</script>
   </section>
@@ -1178,6 +1262,8 @@ Notes:</script>
 <div class="grid grid-1-1">
 
   A mixin can be made smarter by utilizing conditions. With conditionals a value can be checked and output the appropriate CSS if the correct conditions are met.
+  <br /><br />
+  [Example](https://www.sassmeister.com/gist/e89a57d301d5203ba93423dcd8497f1c)
 
   ```scss
   @mixin arrow($direction: right) {
@@ -1313,10 +1399,9 @@ Notes:</script>
       ##### Let's Develop It!
 <hr>
 
-- Create background image styles for each Famous Woman article
-- Try [SubtlePatterns.com](http://subtlepatterns.com) for images to use
+- Create background color styles for each dog article
+- Try [color.adobe.com/explore](https://color.adobe.com/explore/?filter=most-popular&time=month) for fun color schemes to use.
 - Write these background styles with `@each` and a list
-- Bonus: style your social media icons using `@each` and `@if` logic
 Notes:</script>
   </section>
 
@@ -1385,7 +1470,7 @@ Notes:</script>
   </section>
   <section data-markdown data-separator-notes="^Notes:"class="slide ">
     <script type="text/template">
-      #### More Sass <!-- .element: class="short-title" -->
+      #### More Sass and/or CSS things <!-- .element: class="short-title" -->
 
 - [PostCSS](http://postcss.org)
 - [Autoprefixer](http://autoprefixer.github.io) (PostCSS Plugin)
