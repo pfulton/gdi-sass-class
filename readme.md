@@ -3,45 +3,19 @@ Intro to Sass
 ## Author Information
 This is the [Girl Develop It Intro to Sass](https://github.com/gdi-curriculum-review/gdi-sass-intro) course. Materials by [Catherine Farman](https://github.com/cfarm), based on [Intermediate HTML/CSS materials](https://github.com/girldevelopit/gdi-core-intermediate-html-css) by Girl Develop It.
 
-The course is meant to be taught in 2 two-hour sections. Each of the slides and practice files are customizable according to the needs of a given class or audience.
-
 ## Modified September 2017
 Modified by [Philip Zastrow](http://twitter.com/zastrow) for [GDI Dayton](http://gdidayton.com)
 ---------------------
+
+## Modified November 2017
+Modified by [Patrick Fulton](http://twitter.com/patrickfulton) for [GDI Pittsburgh](https://www.girldevelopit.com/chapters/pittsburgh)
+
 ## Building the slide deck:
 
 The slide deck is available as is and ready to run in the `docs` directory. A Node-base build process has been built around the slide deck to allow the deck to be broken down into manageable chunks, as well as Sass for CSS generation.
 
 - To install Node modules run `npm install`
 - To generate and serve the slide deck run `npm start`
-
-
-## Classes
-
-### Class 1
-
-
-#### Part 1: Introduction to Sass. What is it? Why does it matter?
-We look at how Sass makes writing CSS easier, and set up our environment. You will install Ruby and Sass, learn basics of the command line and get your files set up to compile Sass into CSS.
-
-#### Part 2: Building Blocks of Sass.
-You'll learn basic Sass concepts including variables, nesting, color functions and mix-ins. Students will create a basic Sass stylesheet with color and font variables, nested styles, and simple mix-ins for reusing CSS.
-You'll learn the difference between hidden comments and visible comments, and see the output of your Sass experiments.
-
-### Class 2
-
-#### Part 1: Advanced Mix-Ins
-You'll learn how to create advanced mix-ins for CSS3 features like gradients, sprite images, and drop shadows. We'll redesign the front end of our site using Sass to style it with the latest CSS3 features.
-
-#### Part 2: Custom Sass Functions
-You will write your own functions to extend your Sass, using programming concepts like if/else statements, for loops, and lists to power your CSS.
-
-#### Part 3: Sass Tips & Tricks
-Sass extends CSS3, and there are also tools that extend Sass! We'll look at the following Sass helpers:
-* [Compass](http://compass-style.org/), which gives you open source mix-ins and functions to use in your own code
-* [CodeKit](http://incident57.com/codekit/) & [LiveReload](http://livereload.com/), applications for compiling Sass for your projects (without the command line)
-* [Sass Sleuth](http://www.mobify.com/dev/sass-sleuth-debugging-sass-in-webkit-browsers/), for debugging code in the browser inspector
-* [Codepen.io](http://www.codepen.io) for sharing code a la JSFiddle
 
 ## Theme customization
 
