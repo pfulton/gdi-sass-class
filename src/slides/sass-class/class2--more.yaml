@@ -17,3 +17,9 @@ slides:
       - [`@warn`](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#_warn)
       - [`@while`](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#_while)
       - [`@at-root`](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#_at-root__at-root)
+
+  -
+    content: |
+      #### A Quick Way to Run Sass Locally <!-- .element: class="short-title" -->
+
+      - [https://goo.gl/qNJbu8](https://github.com/pfulton/node-sass-starter)
