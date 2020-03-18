@@ -1,14 +1,6 @@
 slides:
   -
     content: |
-      # Mixins 2 (the sequel)
-      ###### Intro to Sass<!-- .element: class="short-title" -->
-
-    options:
-      class: section-card
-
-  -
-    content: |
       ### Mixins <!-- .element: class="short-title" -->
 
       #### Variable Arguments

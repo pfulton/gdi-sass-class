@@ -26,6 +26,14 @@ slides:
   -
     content: |
       #### Terms <!-- .element: class="short-title" -->
+      ### Dart Sass
+
+        Dart Sass is the primary implementation of Sass, which means it gets new features before any other implementation.
+
+        We've started to move toward Dart Sass in some of our newer projects, but many of them still use the Node version of LibSass. This is not a big deal.
+  -
+    content: |
+      #### Terms <!-- .element: class="short-title" -->
       ### Preprocessor
 
       A computer program that modifies data to conform<br>with the input requirements of another program.
@@ -50,9 +58,11 @@ slides:
       #### Other Terms You Might Hear <!-- .element: class="short-title" -->
       ### Compass
 
-      Compass is (was) an open-source CSS Authoring Framework.
+      Compass was an open-source CSS Authoring Framework.
 
       You can think of it as a big library or framework of Sass mixins. It was an awesome tool for older browser support & vendor prefixes.
+
+      It's now deprecated.
 
   -
     content: |

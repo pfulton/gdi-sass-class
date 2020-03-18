@@ -103,12 +103,3 @@ slides:
       }
       ```
       </div></div>
-
-  -
-    content: |
-      ##### Let's Develop It!
-      <hr>
-
-      - Create background color styles for each dog article
-      - Try [color.adobe.com/explore](https://color.adobe.com/explore/?filter=most-popular&time=month) for fun color schemes to use.
-      - Write these background styles with `@each` and a list

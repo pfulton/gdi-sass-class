@@ -59,15 +59,3 @@ slides:
       nav a:hover { text-decoration: underline; }
       ```
       </div></div>
-
-  -
-    content: |
-      ##### Let's Develop It!
-      <hr>
-
-        - In your browser, go to: [https://goo.gl/yZnrqk](https://goo.gl/yZnrqk)
-        - Open the `_nesting.scss` file.
-        - Rewrite some styles to use nesting and referencing the parent
-        - Look for selectors that share a common parent HTML element, like `header`, `nav`, `footer`, `main`
-        - Look for hover styles, or add some, to practice referencing the parent with `&`
-        - There are lots of possible solutions! Be creative!

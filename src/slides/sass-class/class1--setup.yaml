@@ -13,7 +13,9 @@ slides:
       <hr>
 
       1. You write Sass (`.scss` files)
-      2. You run a command (`sass --watch`) on the command line *
+      2. Some kind of "build" process is run.
+        * You run a command (`sass --watch`) on the command line.
+        * We can talk about this later.
       3. `.scss` files compile into `.css` files
 
     notes: |

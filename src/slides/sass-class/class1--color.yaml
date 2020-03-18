@@ -92,24 +92,3 @@ slides:
       ```
       <p class="util-margin-t1">Example of output style</p>
       </div></div>
-
-
-  -
-    content: |
-      ##### Let's Develop It!
-      <hr>
-
-      <div class="grid grid-1-1 util-margin-t2">
-      - Edit your variables in `_utilities.scss` file to use color functions
-      - Refer to the <a target="_blank" href="http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html">sass-lang.com docs</a>
-      - Compile to CSS to see your changes
-      - Bonus - change the color scheme of your website without editing `main.scss`!
-
-      ```
-      lighten(#000, 20%)
-      darken(#eee, 30%)
-      grayscale(#2a79af)
-      saturate(#2a79af, 40%)
-      invert(#2a79af)
-      ```
-      </div>

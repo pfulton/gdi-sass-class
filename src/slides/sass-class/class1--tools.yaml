@@ -6,38 +6,6 @@ slides:
 
     options:
       class: section-card
-
-  -
-    content: |
-      ###### Tools <!-- .element: class="short-title" -->
-
-      ### Modern Browser
-
-      <ul class="util-margin-t1 util-margin-b2" style="display: flex;">
-        <li class="util-margin-t0">Safari</li>
-        <li class="util-margin-t0 util-margin-l2">Chrome</li>
-        <li class="util-margin-t0 util-margin-l2">Firefox</li>
-        <li class="util-margin-t0 util-margin-l2">Edge</li>
-        <li class="util-margin-t0 util-margin-l2">Opera</li>
-      </ul>
-
-  -
-    content: |
-      ###### Tools <!-- .element: class="short-title" -->
-      ### Command Line
-
-      - Terminal for Mac (Find in Applications> Utilities)
-      - Git for Windows ([see how to install](https://openhatch.org/missions/windows-setup/install-git-bash))
-
-  -
-    content: |
-      ###### Tools <!-- .element: class="short-title" -->
-      ### Text Editor
-
-      - Atom - Mac or Windows ([atom.io](http://atom.io))
-      - Visual Studio Code - Mac or Windows ([code.visualstudio.com](https://code.visualstudio.com/))
-      - Sublime Text - Mac or Windows ([sublimetext.com](http://www.sublimetext.com))
-
   -
     content: |
       ###### Tools <!-- .element: class="short-title" -->
